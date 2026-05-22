@@ -11,6 +11,16 @@ import WhySmartosphere from './components/WhySmartosphere';
 import AboutUs from './components/AboutUs';
 import CaseStudiesPage from './components/CaseStudiesPage';
 import SolutionsPage from './components/SolutionsPage';
+import GokartServomotor from './components/GokartServomotor';
+import GeoTracker from './components/GeoTracker';
+import MHITS from './components/MHITS';
+import MFlash from './components/MFlash';
+import Laplok from './components/Laplok';
+import BillboardControls from './components/BillboardControls';
+import BillboardPortal from './components/BillboardPortal';
+import BioMed from './components/BioMed';
+import RadiationElectronics from './components/RadiationElectronics';
+import Engineering from './components/Engineering';
 import Footer from './components/Footer';
 
 function App() {
@@ -48,9 +58,19 @@ function App() {
   const isAboutPage = currentPath === '/about-us';
   const isCaseStudiesPage = currentPath === '/case-studies';
   const isSolutionsPage = currentPath === '/solutions';
+  const isGokartServomotorPage = currentPath === '/gokart-servomotor';
+  const isGeoTrackerPage = currentPath === '/geotracker';
+  const isMHITSPage = currentPath === '/mhits';
+  const isMFlashPage = currentPath === '/mflash';
+  const isLaplokPage = currentPath === '/laplok';
+  const isBillboardControlsPage = currentPath === '/billboard-controls';
+  const isBillboardPortalPage = currentPath === '/billboard-portal';
+  const isBioMedPage = currentPath === '/biomed';
+  const isRadiationElectronicsPage = currentPath === '/radiation-electronics';
+  const isEngineeringPage = currentPath === '/engineering';
 
   useEffect(() => {
-    if (isAboutPage || isCaseStudiesPage || isSolutionsPage) {
+    if (isAboutPage || isCaseStudiesPage || isSolutionsPage || isGokartServomotorPage || isGeoTrackerPage || isMHITSPage || isMFlashPage || isLaplokPage || isBillboardControlsPage || isBillboardPortalPage || isBioMedPage || isRadiationElectronicsPage || isEngineeringPage) {
       window.scrollTo({ top: 0, behavior: 'instant' });
     } else if (currentPath === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -65,7 +85,7 @@ function App() {
         }, 100);
       }
     }
-  }, [currentPath, isAboutPage, isSolutionsPage]);
+  }, [currentPath, isAboutPage, isSolutionsPage, isGokartServomotorPage, isGeoTrackerPage, isMHITSPage, isMFlashPage, isLaplokPage, isBillboardControlsPage, isBillboardPortalPage, isBioMedPage, isRadiationElectronicsPage, isEngineeringPage]);
 
   return (
     <div className="app">
@@ -76,6 +96,26 @@ function App() {
         <CaseStudiesPage />
       ) : isSolutionsPage ? (
         <SolutionsPage />
+      ) : isGokartServomotorPage ? (
+        <GokartServomotor />
+      ) : isGeoTrackerPage ? (
+        <GeoTracker />
+      ) : isMHITSPage ? (
+        <MHITS />
+      ) : isMFlashPage ? (
+        <MFlash />
+      ) : isLaplokPage ? (
+        <Laplok />
+      ) : isBillboardControlsPage ? (
+        <BillboardControls />
+      ) : isBillboardPortalPage ? (
+        <BillboardPortal />
+      ) : isBioMedPage ? (
+        <BioMed />
+      ) : isRadiationElectronicsPage ? (
+        <RadiationElectronics />
+      ) : isEngineeringPage ? (
+        <Engineering />
       ) : (
         <>
           <Hero />
