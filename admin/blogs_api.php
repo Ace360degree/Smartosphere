@@ -1,14 +1,26 @@
 <?php
 // admin/blogs_api.php
-// JSON API endpoint for the React front-end to fetch Wordpress blog posts
-
-require_once __DIR__ . '/config.php';
+// JSON API endpoint for the React front-end to fetch WordPress blog posts
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
 
-$pdo = getPdo();
+// Connect directly to the WordPress database (smartosphere_blogs)
+// This is separate from the admin config.php which points to the smartosphere DB
+function getWpPdo() {
+    static $pdo = null;
+    if ($pdo === null) {
+        $dsn = 'mysql:host=127.0.0.1;port=3306;dbname=smartosphere_blogs;charset=utf8mb4';
+        $pdo = new PDO($dsn, 'root', '', [
+            PDO::ATTR_ERRMODE          => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        ]);
+    }
+    return $pdo;
+}
+
+$pdo = getWpPdo();
 
 try {
     if (isset($_GET['slug'])) {

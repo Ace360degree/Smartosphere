@@ -129,7 +129,7 @@ const Blogs = () => {
     const fetchArticles = async () => {
       try {
         const url = window.location.hostname === 'localhost'
-          ? 'http://localhost:8000/admin/blogs_api.php'
+          ? 'http://localhost/Smartosphere/admin/blogs_api.php'
           : '/admin/blogs_api.php';
         const res = await fetch(url);
         if (res.ok) {

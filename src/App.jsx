@@ -111,7 +111,7 @@ function App() {
         setLoadingCaseStudy(true);
         try {
           const url = window.location.hostname === 'localhost' 
-            ? `http://localhost:8000/admin/api.php?slug=${activeCaseStudySlug}` 
+            ? `http://localhost/Smartosphere/admin/api.php?slug=${activeCaseStudySlug}` 
             : `/admin/api.php?slug=${activeCaseStudySlug}`;
           const res = await fetch(url);
           if (res.ok) {
@@ -144,7 +144,7 @@ function App() {
         setLoadingBlog(true);
         try {
           const url = window.location.hostname === 'localhost'
-            ? `http://localhost:8000/admin/blogs_api.php?slug=${activeBlogSlug}`
+            ? `http://localhost/Smartosphere/admin/blogs_api.php?slug=${activeBlogSlug}`
             : `/admin/blogs_api.php?slug=${activeBlogSlug}`;
           const res = await fetch(url);
           if (res.ok) {
