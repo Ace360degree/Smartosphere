@@ -190,9 +190,9 @@ const Footer = () => {
             <p className="legal-note">All solutions are engineered for specific operating environments. Specifications and configurations may vary based on deployment requirements.</p>
           </div>
           <div className="footer-links">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms & Conditions</a>
-            <a href="#disclaimer">Disclaimer</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms & Conditions</a>
+            <a href="/disclaimer">Disclaimer</a>
           </div>
         </div>
       </div>

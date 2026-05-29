@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const caseStudyIcons = [
   '/icons/casestudy/1.png',
@@ -33,6 +33,35 @@ const caseStudiesData = [
 ];
 
 const CaseStudies = () => {
+  const [studies, setStudies] = useState(caseStudiesData);
+
+  useEffect(() => {
+    const fetchCases = async () => {
+      try {
+        const url = window.location.hostname === 'localhost' 
+          ? 'http://localhost:8000/admin/api.php' 
+          : '/admin/api.php';
+        const res = await fetch(url);
+        if (res.ok) {
+          const dbCases = await res.json();
+          // Map DB structure to component structure
+          const mappedCases = dbCases.map((c, i) => ({
+            id: String(i + 1).padStart(2, '0'),
+            title: c.title,
+            slug: c.slug,
+            description: c.tagline || (c.challenge && c.challenge.summary) || c.clientBackground?.substring(0, 80) + '...',
+          }));
+          if (mappedCases.length > 0) {
+            setStudies(mappedCases.slice(0, 4));
+          }
+        }
+      } catch (err) {
+        console.error('Error fetching case studies:', err);
+      }
+    };
+    fetchCases();
+  }, []);
+
   return (
     <section className="case-studies-section" id="case-studies">
       <style>{`
@@ -137,6 +166,8 @@ const CaseStudies = () => {
         }
 
         .case-study-card {
+          display: block;
+          text-decoration: none;
           position: relative;
           background: #23272F;
           border-radius: 16px;
@@ -282,8 +313,13 @@ const CaseStudies = () => {
         </div>
 
         <div className="case-studies-grid">
-          {caseStudiesData.map((study) => (
-            <div key={study.id} className="case-study-card">
+          {studies.map((study) => {
+            let slug = study.slug || study.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+            if (study.id === '02' && !study.slug) { // Fallback Billboard Network Management
+              slug = 'billboard-network-management';
+            }
+            return (
+              <a href={`/case-studies/${slug}`} key={study.id} className="case-study-card">
               <span className="card-number">CASE STUDY {study.id}</span>
               <h3 className="card-title">{study.title}</h3>
               <p className="card-desc">{study.description}</p>
@@ -294,8 +330,9 @@ const CaseStudies = () => {
                   </div>
                 ))}
               </div>
-            </div>
-          ))}
+            </a>
+            );
+          })}
         </div>
       </div>
     </section>
