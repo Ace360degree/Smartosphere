@@ -11,7 +11,7 @@ const Footer = () => {
   ];
 
   const explore = [
-    'Industries', 'Engineering & R&D', 'Case Studies', 'Blogs', 'About Us'
+    'Industries', 'Engineering', 'Ecosystem', 'Case Studies', 'Blogs', 'About Us'
   ];
 
   return (

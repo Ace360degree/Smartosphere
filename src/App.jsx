@@ -34,6 +34,9 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
 import Disclaimer from './components/Disclaimer';
 import Footer from './components/Footer';
+import InnovationEcosystem from './components/InnovationEcosystem';
+import SmartosphereTechnicalities from './components/SmartosphereTechnicalities';
+import SmartosphereCapital from './components/SmartosphereCapital';
 
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -88,6 +91,9 @@ function App() {
   const isBioMedPage = currentPath === '/biomed';
   const isRadiationElectronicsPage = currentPath === '/radiation-electronics';
   const isEngineeringPage = currentPath === '/engineering';
+  const isEcosystemPage = currentPath === '/ecosystem' || currentPath === '/innovation-ecosystem';
+  const isTechnicalitiesPage = currentPath === '/innovation-ecosystem/technicalities' || currentPath === '/ecosystem/technicalities';
+  const isCapitalPage = currentPath === '/innovation-ecosystem/capital' || currentPath === '/ecosystem/capital';
   const isIndustriesPage = currentPath === '/industries';
   const isBlogsPage = currentPath === '/blogs';
   const blogSlugMatch = currentPath.match(/^\/blogs\/([^/]+)$/);
@@ -167,7 +173,7 @@ function App() {
   }, [activeBlogSlug]);
 
   useEffect(() => {
-    if (isAboutPage || isCaseStudiesPage || isSolutionsPage || isGokartServomotorPage || isGeoTrackerPage || isMHITSPage || isMFlashPage || isLaplokPage || isBillboardControlsPage || isBillboardPortalPage || isBioMedPage || isRadiationElectronicsPage || isEngineeringPage || isIndustriesPage || isBlogsPage || isContactPage || isPrivacyPolicyPage || isTermsPage || isDisclaimerPage || isBillboardNetworkManagementPage || isBiomedicalMonitoringPage || isGoKartTrackControlPage || isRadiationSafetyMonitoringPage || dynamicCaseStudy || dynamicBlog) {
+    if (isAboutPage || isCaseStudiesPage || isSolutionsPage || isGokartServomotorPage || isGeoTrackerPage || isMHITSPage || isMFlashPage || isLaplokPage || isBillboardControlsPage || isBillboardPortalPage || isBioMedPage || isRadiationElectronicsPage || isEngineeringPage || isEcosystemPage || isTechnicalitiesPage || isCapitalPage || isIndustriesPage || isBlogsPage || isContactPage || isPrivacyPolicyPage || isTermsPage || isDisclaimerPage || isBillboardNetworkManagementPage || isBiomedicalMonitoringPage || isGoKartTrackControlPage || isRadiationSafetyMonitoringPage || dynamicCaseStudy || dynamicBlog) {
       window.scrollTo({ top: 0, behavior: 'instant' });
     } else if (currentPath === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -182,7 +188,7 @@ function App() {
         }, 100);
       }
     }
-  }, [currentPath, isAboutPage, isSolutionsPage, isGokartServomotorPage, isGeoTrackerPage, isMHITSPage, isMFlashPage, isLaplokPage, isBillboardControlsPage, isBillboardPortalPage, isBioMedPage, isRadiationElectronicsPage, isEngineeringPage, isIndustriesPage, isBlogsPage, isContactPage, isPrivacyPolicyPage, isTermsPage, isDisclaimerPage, isBillboardNetworkManagementPage, isBiomedicalMonitoringPage, isGoKartTrackControlPage, isRadiationSafetyMonitoringPage, dynamicCaseStudy, dynamicBlog]);
+  }, [currentPath, isAboutPage, isSolutionsPage, isGokartServomotorPage, isGeoTrackerPage, isMHITSPage, isMFlashPage, isLaplokPage, isBillboardControlsPage, isBillboardPortalPage, isBioMedPage, isRadiationElectronicsPage, isEngineeringPage, isEcosystemPage, isTechnicalitiesPage, isCapitalPage, isIndustriesPage, isBlogsPage, isContactPage, isPrivacyPolicyPage, isTermsPage, isDisclaimerPage, isBillboardNetworkManagementPage, isBiomedicalMonitoringPage, isGoKartTrackControlPage, isRadiationSafetyMonitoringPage, dynamicCaseStudy, dynamicBlog]);
 
   return (
     <div className="app">
@@ -213,6 +219,12 @@ function App() {
         <RadiationElectronics />
       ) : isEngineeringPage ? (
         <Engineering />
+      ) : isEcosystemPage ? (
+        <InnovationEcosystem />
+      ) : isTechnicalitiesPage ? (
+        <SmartosphereTechnicalities />
+      ) : isCapitalPage ? (
+        <SmartosphereCapital />
       ) : isIndustriesPage ? (
         <Industries />
       ) : isBlogsPage ? (

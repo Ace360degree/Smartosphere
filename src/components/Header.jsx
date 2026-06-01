@@ -9,6 +9,7 @@ const Header = () => {
     { name: 'Solutions', hasDropdown: true },
     { name: 'Industries', hasDropdown: false },
     { name: 'Engineering', hasDropdown: false },
+    { name: 'Ecosystem', hasDropdown: false },
     { name: 'Case Studies', hasDropdown: false },
     { name: 'Blogs', hasDropdown: false },
     { name: 'About Us', hasDropdown: false },
@@ -100,7 +101,7 @@ const Header = () => {
           font-weight: 500;
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 6px;
         }
 
         .nav-link:hover,
