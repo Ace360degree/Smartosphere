@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CustomCursor from './components/CustomCursor';
+import VortexCursor from './components/VortexCursor';
 import Header from './components/Header';
 import RequestDemoModal from './components/RequestDemoModal';
 import Hero from './components/Hero';
@@ -220,7 +220,7 @@ function App() {
           }
         }
       `}</style>
-      <CustomCursor />
+      <VortexCursor />
       <div className="app">
       <Header onRequestDemo={() => setIsDemoModalOpen(true)} />
       <div className={`page-transition${pageLoaded ? ' page-visible' : ''}`}>
