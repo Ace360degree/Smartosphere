@@ -37,6 +37,9 @@ const Contact = () => {
     message: "",
   });
 
+  const [status, setStatus] = useState("idle"); // idle, submitting, success, error
+  const [errorMessage, setErrorMessage] = useState("");
+
   const heroRef = useRef(null);
   const formRef = useRef(null);
   const demoRef = useRef(null);
@@ -46,9 +49,45 @@ const Contact = () => {
   const demoInView = useInView(demoRef, { once: true, margin: "-80px" });
   const processInView = useInView(processRef, { once: true, margin: "-80px" });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({ enquiryType, ...formData });
+    setStatus("submitting");
+    setErrorMessage("");
+
+    try {
+      const url = window.location.hostname === "localhost"
+        ? "http://localhost/Smartosphere/admin/contact_submit.php"
+        : "/admin/contact_submit.php";
+
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ enquiryType, ...formData }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        setStatus("success");
+        setFormData({
+          fullName: "",
+          organisation: "",
+          email: "",
+          phone: "",
+          areaOfInterest: "",
+          message: "",
+        });
+      } else {
+        setStatus("error");
+        setErrorMessage(data.error || "An error occurred. Please try again.");
+      }
+    } catch (err) {
+      console.error("Error submitting contact form:", err);
+      setStatus("error");
+      setErrorMessage("Network error. Please verify your connection.");
+    }
   };
 
   const fadeUp = (delay = 0) => ({
@@ -790,87 +829,125 @@ const Contact = () => {
                 <h3 className="form-heading">
                   {enquiryType === "product" ? "Product Enquiry" : "Custom Development Enquiry"}
                 </h3>
-                <p className="form-subheading">
-                  Fill in the details below and we'll get back to you promptly.
-                </p>
 
-                <div className="form-grid">
-                  <div>
-                    <label className="form-label">Full Name *</label>
-                    <input
-                      type="text"
-                      required
-                      value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="form-input"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label className="form-label">Organisation Name</label>
-                    <input
-                      type="text"
-                      value={formData.organisation}
-                      onChange={(e) => setFormData({ ...formData, organisation: e.target.value })}
-                      className="form-input"
-                      placeholder="Company or organisation"
-                    />
-                  </div>
-                  <div>
-                    <label className="form-label">Email Address *</label>
-                    <input
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="form-input"
-                      placeholder="you@company.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="form-label">Phone Number</label>
-                    <input
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="form-input"
-                      placeholder="+91-XXXXXXXXXX"
-                    />
-                  </div>
-                  <div className="form-span-2">
-                    <label className="form-label">Area of Interest</label>
-                    <select
-                      value={formData.areaOfInterest}
-                      onChange={(e) => setFormData({ ...formData, areaOfInterest: e.target.value })}
-                      className="form-select"
-                    >
-                      <option value="">Select an area...</option>
-                      {areasOfInterest.map((a) => (
-                        <option key={a} value={a}>{a}</option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className="form-span-2">
-                    <label className="form-label">Message / Brief Requirement *</label>
-                    <textarea
-                      required
-                      rows={5}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="form-textarea"
-                      placeholder="Share a brief description of your requirement, operating environment, or problem statement. Technical details are welcome."
-                    />
-                    <p className="input-hint">
-                      You can share a brief description of your requirement, operating environment, or problem statement. Technical details are welcome.
+                {status === "success" ? (
+                  <div style={{ textAlign: 'center', padding: '40px 0' }}>
+                    <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '56px', height: '56px', borderRadius: '50%', backgroundColor: 'rgba(236, 130, 9, 0.1)', color: '#EC8209', marginBottom: '20px' }}>
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                      </svg>
+                    </div>
+                    <h4 style={{ fontSize: '20px', fontWeight: '700', color: '#fff', marginBottom: '10px' }}>Inquiry Submitted!</h4>
+                    <p style={{ fontSize: '14.5px', color: '#9ca3af', lineHeight: '1.6', margin: '0 0 24px 0' }}>
+                      Thank you for contacting SmartoSphere Solutions. A representative from our team will get in touch with you shortly. An acknowledgment email has been sent to you.
                     </p>
+                    <button type="button" onClick={() => setStatus("idle")} className="submit-btn" style={{ margin: 0 }}>
+                      Send Another Enquiry
+                    </button>
                   </div>
-                </div>
+                ) : (
+                  <>
+                    <p className="form-subheading">
+                      Fill in the details below and we'll get back to you promptly.
+                    </p>
 
-                <button type="submit" className="submit-btn">
-                  <Send size={16} />
-                  Submit Enquiry
-                  <ArrowRight size={16} />
-                </button>
+                    {status === "error" && (
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', backgroundColor: 'rgba(239, 68, 68, 0.1)', border: '1px solid rgba(239, 68, 68, 0.2)', borderRadius: '8px', padding: '12px 16px', color: '#f87171', fontSize: '13.5px', marginBottom: '20px' }}>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                          <circle cx="12" cy="12" r="10" />
+                          <line x1="12" y1="8" x2="12" y2="12" />
+                          <line x1="12" y1="16" x2="12.01" y2="16" />
+                        </svg>
+                        <span>{errorMessage}</span>
+                      </div>
+                    )}
+
+                    <div className="form-grid">
+                      <div>
+                        <label className="form-label">Full Name *</label>
+                        <input
+                          type="text"
+                          required
+                          value={formData.fullName}
+                          onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                          className="form-input"
+                          placeholder="Your full name"
+                          disabled={status === "submitting"}
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Organisation Name</label>
+                        <input
+                          type="text"
+                          value={formData.organisation}
+                          onChange={(e) => setFormData({ ...formData, organisation: e.target.value })}
+                          className="form-input"
+                          placeholder="Company or organisation"
+                          disabled={status === "submitting"}
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Email Address *</label>
+                        <input
+                          type="email"
+                          required
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          className="form-input"
+                          placeholder="you@company.com"
+                          disabled={status === "submitting"}
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Phone Number</label>
+                        <input
+                          type="tel"
+                          value={formData.phone}
+                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          className="form-input"
+                          placeholder="+91-XXXXXXXXXX"
+                          disabled={status === "submitting"}
+                        />
+                      </div>
+                      <div className="form-span-2">
+                        <label className="form-label">Area of Interest</label>
+                        <select
+                          value={formData.areaOfInterest}
+                          onChange={(e) => setFormData({ ...formData, areaOfInterest: e.target.value })}
+                          className="form-select"
+                          disabled={status === "submitting"}
+                        >
+                          <option value="">Select an area...</option>
+                          {areasOfInterest.map((a) => (
+                            <option key={a} value={a}>{a}</option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="form-span-2">
+                        <label className="form-label">Message / Brief Requirement *</label>
+                        <textarea
+                          required
+                          rows={5}
+                          value={formData.message}
+                          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                          className="form-textarea"
+                          placeholder="Share a brief description of your requirement, operating environment, or problem statement. Technical details are welcome."
+                          disabled={status === "submitting"}
+                        />
+                        <p className="input-hint">
+                          You can share a brief description of your requirement, operating environment, or problem statement. Technical details are welcome.
+                        </p>
+                      </div>
+                    </div>
+
+                    <button type="submit" disabled={status === "submitting"} className="submit-btn">
+                      <Send size={16} />
+                      {status === "submitting" ? "Submitting..." : "Submit Enquiry"}
+                      <ArrowRight size={16} />
+                    </button>
+                  </>
+                )}
               </form>
             </motion.div>
           </div>

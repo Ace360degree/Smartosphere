@@ -12,7 +12,7 @@ const BioMed = () => {
           padding-top: 80px;
         }
         .gk-wrap {
-          max-width: 760px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 32px;
         }
@@ -46,7 +46,7 @@ const BioMed = () => {
           justify-content: center;
         }
         .gk-h1 {
-          font-size: 32px;
+          font-size: 48px;
           font-weight: 700;
           letter-spacing: -0.5px;
           margin: 0;
@@ -54,17 +54,18 @@ const BioMed = () => {
           color: #ffffff;
         }
         .gk-hero-subtitle {
-          font-size: 17px;
+          font-size: 24px;
           font-weight: 600;
           color: #EC8209;
           margin: 0 0 20px 0;
           line-height: 1.4;
         }
         .gk-hero-desc {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0 0 32px 0;
+          max-width: 800px;
         }
         .gk-btn-primary {
           display: inline-flex;
@@ -116,7 +117,7 @@ const BioMed = () => {
         }
         .gk-section:last-of-type { border-bottom: none; }
         .gk-h2 {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -124,13 +125,13 @@ const BioMed = () => {
           letter-spacing: -0.3px;
         }
         .gk-body {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0;
         }
         .gk-caps-title {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           text-align: center;
@@ -156,14 +157,14 @@ const BioMed = () => {
         .gk-cap-cell:nth-child(2n) { border-right: none; }
         .gk-cap-cell:nth-last-child(-n+1) { border-bottom: none; }
         .gk-cap-title {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 700;
           color: #EC8209;
           margin: 0 0 10px 0;
           line-height: 1.3;
         }
         .gk-cap-desc {
-          font-size: 13.5px;
+          font-size: 14px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0;
@@ -176,7 +177,7 @@ const BioMed = () => {
         }
         .gk-tag {
           display: inline-block;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
           color: #EC8209;
           background: rgba(236, 130, 9, 0.08);
@@ -192,7 +193,7 @@ const BioMed = () => {
           text-align: center;
         }
         .gk-cta-title {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -200,7 +201,7 @@ const BioMed = () => {
           letter-spacing: -0.4px;
         }
         .gk-cta-desc {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0 auto 32px auto;
@@ -213,7 +214,7 @@ const BioMed = () => {
           flex-wrap: wrap;
         }
         .gk-cta-footer {
-          font-size: 13px;
+          font-size: 14px;
           color: #4b5563;
           margin: 40px 0 0 0;
           font-style: italic;
@@ -257,11 +258,11 @@ const BioMed = () => {
           <p className="gk-hero-subtitle">Biomedical Monitoring &amp; Electronic Systems</p>
 
           <p className="gk-hero-desc">
-            BioMed is SmartoSphere's specialised biomedical solution focused on the design and deployment of custom 
-            electronic systems for health monitoring, diagnostics, and medical data acquisition. Built as an integrated 
-            ecosystem of biomedical-grade hardware, embedded intelligence, and secure software, BioMed enables 
-            reliable monitoring in clinical, research, and controlled environments. The solution is engineered for 
-            accuracy, stability, and adaptability—ensuring dependable performance in environments where data quality 
+            BioMed is SmartoSphere's specialised biomedical solution focused on the design and deployment of custom
+            electronic systems for health monitoring, diagnostics, and medical data acquisition. Built as an integrated
+            ecosystem of biomedical-grade hardware, embedded intelligence, and secure software, BioMed enables
+            reliable monitoring in clinical, research, and controlled environments. The solution is engineered for
+            accuracy, stability, and adaptability—ensuring dependable performance in environments where data quality
             and continuity are critical.
           </p>
 
@@ -282,10 +283,10 @@ const BioMed = () => {
         <div className="gk-section">
           <h2 className="gk-h2">The Challenge</h2>
           <p className="gk-body">
-            Biomedical environments demand precise, continuous, and reliable data. However, many monitoring systems are 
-            either generic, fragmented, or difficult to adapt to specific clinical workflows. Manual observation, 
-            delayed data access, and lack of system integration can impact decision-making, patient safety, and 
-            operational efficiency. BioMed is designed to address these challenges by delivering purpose-built 
+            Biomedical environments demand precise, continuous, and reliable data. However, many monitoring systems are
+            either generic, fragmented, or difficult to adapt to specific clinical workflows. Manual observation,
+            delayed data access, and lack of system integration can impact decision-making, patient safety, and
+            operational efficiency. BioMed is designed to address these challenges by delivering purpose-built
             biomedical electronics that integrate seamlessly into real-world healthcare and research settings.
           </p>
         </div>
@@ -296,9 +297,9 @@ const BioMed = () => {
         <div className="gk-section">
           <h2 className="gk-h2">The BioMed Approach</h2>
           <p className="gk-body">
-            BioMed focuses on engineering accuracy at the hardware level and intelligence at the software level. The 
-            system captures biomedical signals through carefully selected sensors, processes them through embedded 
-            firmware, and securely transmits data to a central platform. This ensures that data is not only 
+            BioMed focuses on engineering accuracy at the hardware level and intelligence at the software level. The
+            system captures biomedical signals through carefully selected sensors, processes them through embedded
+            firmware, and securely transmits data to a central platform. This ensures that data is not only
             collected accurately but is also available in a usable, structured form for monitoring, analysis, and reporting.
           </p>
         </div>
@@ -312,37 +313,37 @@ const BioMed = () => {
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Biomedical Data Acquisition</h3>
               <p className="gk-cap-desc">
-                BioMed supports the collection of biomedical and physiological data based on application requirements. 
-                The system is designed to handle continuous monitoring while maintaining signal integrity and 
+                BioMed supports the collection of biomedical and physiological data based on application requirements.
+                The system is designed to handle continuous monitoring while maintaining signal integrity and
                 stability over extended durations.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Reliable Embedded Electronics</h3>
               <p className="gk-cap-desc">
-                The hardware architecture is developed to support consistent performance in medical and controlled 
+                The hardware architecture is developed to support consistent performance in medical and controlled
                 environments. Emphasis is placed on reliability, calibration support, and long-term operation.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Secure Data Handling</h3>
               <p className="gk-cap-desc">
-                BioMed is designed with secure data transmission and storage in mind. Biomedical data is processed 
-                and transmitted securely to protect confidentiality and ensure data integrity, supporting use in 
+                BioMed is designed with secure data transmission and storage in mind. Biomedical data is processed
+                and transmitted securely to protect confidentiality and ensure data integrity, supporting use in
                 regulated or sensitive environments.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Monitoring &amp; Visualisation Platform</h3>
               <p className="gk-cap-desc">
-                Collected data can be accessed through dashboards that provide real-time visibility as well as historical 
+                Collected data can be accessed through dashboards that provide real-time visibility as well as historical
                 trends. This enables clinicians, researchers, or operators to review data efficiently and make informed decisions.
               </p>
             </div>
             <div className="gk-cap-cell gk-cap-last" style={{ gridColumn: '1 / -1', borderBottom: 'none' }}>
               <h3 className="gk-cap-title">Customisable System Design</h3>
               <p className="gk-cap-desc">
-                BioMed is not a one-size-fits-all solution. Sensor selection, data processing logic, dashboards, 
+                BioMed is not a one-size-fits-all solution. Sensor selection, data processing logic, dashboards,
                 and reporting formats can be customised to align with specific medical, clinical, or research workflows.
               </p>
             </div>
@@ -355,10 +356,10 @@ const BioMed = () => {
         <div className="gk-section">
           <h2 className="gk-h2">How BioMed Works</h2>
           <p className="gk-body">
-            BioMed operates through a layered system architecture. Biomedical sensors capture signals, which are 
-            processed by embedded electronics and transmitted securely to the software platform. The platform 
-            organises, visualises, and stores the data, enabling continuous monitoring and long-term analysis. 
-            This architecture allows BioMed to scale from pilot deployments to larger implementations without 
+            BioMed operates through a layered system architecture. Biomedical sensors capture signals, which are
+            processed by embedded electronics and transmitted securely to the software platform. The platform
+            organises, visualises, and stores the data, enabling continuous monitoring and long-term analysis.
+            This architecture allows BioMed to scale from pilot deployments to larger implementations without
             compromising reliability.
           </p>
         </div>
@@ -369,9 +370,9 @@ const BioMed = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Use Cases</h2>
           <p className="gk-body">
-            BioMed is suited for environments where accurate biomedical monitoring is essential. It can be deployed 
-            in clinical monitoring setups, biomedical research projects, controlled observation environments, and 
-            specialised health programs. The system is also adaptable for field monitoring and custom medical 
+            BioMed is suited for environments where accurate biomedical monitoring is essential. It can be deployed
+            in clinical monitoring setups, biomedical research projects, controlled observation environments, and
+            specialised health programs. The system is also adaptable for field monitoring and custom medical
             electronics applications.
           </p>
         </div>
@@ -396,9 +397,9 @@ const BioMed = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Why BioMed by SmartoSphere</h2>
           <p className="gk-body">
-            BioMed is engineered with a focus on precision, adaptability, and long-term usability. By developing 
-            the complete system in-house—hardware, firmware, and software—SmartoSphere ensures tight integration, 
-            higher reliability, and the ability to customise solutions for specific biomedical requirements. 
+            BioMed is engineered with a focus on precision, adaptability, and long-term usability. By developing
+            the complete system in-house—hardware, firmware, and software—SmartoSphere ensures tight integration,
+            higher reliability, and the ability to customise solutions for specific biomedical requirements.
             This approach makes BioMed suitable for both standard monitoring needs and specialised applications.
           </p>
         </div>
@@ -409,8 +410,8 @@ const BioMed = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Deployment &amp; Customisation</h2>
           <p className="gk-body">
-            BioMed can be deployed as a pilot system, adapted for specific monitoring needs, or scaled across 
-            facilities. System configuration, sensor integration, data presentation, and reporting can be 
+            BioMed can be deployed as a pilot system, adapted for specific monitoring needs, or scaled across
+            facilities. System configuration, sensor integration, data presentation, and reporting can be
             aligned with operational, clinical, or research requirements.
           </p>
         </div>
@@ -421,7 +422,7 @@ const BioMed = () => {
         <div className="gk-wrap" style={{ textAlign: 'center' }}>
           <h2 className="gk-cta-title">Start a Conversation</h2>
           <p className="gk-cta-desc">
-            If you are looking for a biomedical monitoring solution that prioritises accuracy, reliability, 
+            If you are looking for a biomedical monitoring solution that prioritises accuracy, reliability,
             and flexibility, BioMed can be engineered to meet your needs.
           </p>
           <div className="gk-cta-btns">

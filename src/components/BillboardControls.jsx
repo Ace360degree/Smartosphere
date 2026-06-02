@@ -12,7 +12,7 @@ const BillboardControls = () => {
           padding-top: 80px;
         }
         .gk-wrap {
-          max-width: 760px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 32px;
         }
@@ -46,7 +46,7 @@ const BillboardControls = () => {
           justify-content: center;
         }
         .gk-h1 {
-          font-size: 32px;
+          font-size: 48px;
           font-weight: 700;
           letter-spacing: -0.5px;
           margin: 0;
@@ -54,17 +54,18 @@ const BillboardControls = () => {
           color: #ffffff;
         }
         .gk-hero-subtitle {
-          font-size: 17px;
+          font-size: 24px;
           font-weight: 600;
           color: #EC8209;
           margin: 0 0 20px 0;
           line-height: 1.4;
         }
         .gk-hero-desc {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0 0 32px 0;
+          max-width: 800px;
         }
         .gk-btn-primary {
           display: inline-flex;
@@ -116,7 +117,7 @@ const BillboardControls = () => {
         }
         .gk-section:last-of-type { border-bottom: none; }
         .gk-h2 {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -124,13 +125,13 @@ const BillboardControls = () => {
           letter-spacing: -0.3px;
         }
         .gk-body {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0;
         }
         .gk-caps-title {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           text-align: center;
@@ -156,14 +157,14 @@ const BillboardControls = () => {
         .gk-cap-cell:nth-child(2n) { border-right: none; }
         .gk-cap-cell:nth-last-child(-n+2) { border-bottom: none; }
         .gk-cap-title {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 700;
           color: #EC8209;
           margin: 0 0 10px 0;
           line-height: 1.3;
         }
         .gk-cap-desc {
-          font-size: 13.5px;
+          font-size: 14px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0;
@@ -176,7 +177,7 @@ const BillboardControls = () => {
         }
         .gk-tag {
           display: inline-block;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
           color: #EC8209;
           background: rgba(236, 130, 9, 0.08);
@@ -192,7 +193,7 @@ const BillboardControls = () => {
           text-align: center;
         }
         .gk-cta-title {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -200,7 +201,7 @@ const BillboardControls = () => {
           letter-spacing: -0.4px;
         }
         .gk-cta-desc {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0 auto 32px auto;
@@ -213,7 +214,7 @@ const BillboardControls = () => {
           flex-wrap: wrap;
         }
         .gk-cta-footer {
-          font-size: 13px;
+          font-size: 14px;
           color: #4b5563;
           margin: 40px 0 0 0;
           font-style: italic;

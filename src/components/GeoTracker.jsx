@@ -15,7 +15,7 @@ const GeoTracker = () => {
 
         /* ── Shared container ── */
         .gk-wrap {
-          max-width: 760px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 32px;
         }
@@ -64,7 +64,7 @@ const GeoTracker = () => {
         }
 
         .gk-h1 {
-          font-size: 32px;
+          font-size: 48px;
           font-weight: 700;
           letter-spacing: -0.5px;
           margin: 0;
@@ -73,7 +73,7 @@ const GeoTracker = () => {
         }
 
         .gk-hero-subtitle {
-          font-size: 17px;
+          font-size: 24px;
           font-weight: 600;
           color: #EC8209;
           margin: 0 0 20px 0;
@@ -81,10 +81,11 @@ const GeoTracker = () => {
         }
 
         .gk-hero-desc {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0 0 32px 0;
+          max-width: 840px;
         }
 
         .gk-btn-primary {
@@ -146,7 +147,7 @@ const GeoTracker = () => {
         }
 
         .gk-h2 {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -155,10 +156,11 @@ const GeoTracker = () => {
         }
 
         .gk-body {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0;
+          max-width: 700px;
         }
 
         .gk-body + .gk-body {
@@ -167,7 +169,7 @@ const GeoTracker = () => {
 
         /* ── Core Capabilities Grid ── */
         .gk-caps-title {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           text-align: center;
@@ -205,7 +207,7 @@ const GeoTracker = () => {
         }
 
         .gk-cap-title {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 700;
           color: #EC8209;
           margin: 0 0 10px 0;
@@ -213,7 +215,7 @@ const GeoTracker = () => {
         }
 
         .gk-cap-desc {
-          font-size: 13.5px;
+          font-size: 14px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0;
@@ -229,7 +231,7 @@ const GeoTracker = () => {
 
         .gk-tag {
           display: inline-block;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
           color: #EC8209;
           background: rgba(236, 130, 9, 0.08);
@@ -248,7 +250,7 @@ const GeoTracker = () => {
         }
 
         .gk-cta-title {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -257,7 +259,7 @@ const GeoTracker = () => {
         }
 
         .gk-cta-desc {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0 auto 32px auto;
@@ -272,7 +274,7 @@ const GeoTracker = () => {
         }
 
         .gk-cta-footer {
-          font-size: 13px;
+          font-size: 14px;
           color: #4b5563;
           margin: 40px 0 0 0;
           font-style: italic;

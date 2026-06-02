@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 import TrackingSolutions from './TrackingSolutions';
 import IndustrialSolutions from './IndustrialSolutions';
 import MediaSolutions from './MediaSolutions';
@@ -466,6 +467,44 @@ const SolutionsPage = () => {
       <DeploymentSolutions />
 
       {/* Render Product Portfolio Underneath */}
+
+      {/* CTA */}
+      <section className="py-20 px-4 bg-[hsl(var(--surface-card))]">
+        <div className="container mx-auto max-w-3xl text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl font-heading font-bold text-heading mb-4"
+          >
+            Need a Custom Solution?
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-body mb-8"
+          >
+            From concept → prototype → production → deployment, SmartoSphere acts as your technology partner.
+          </motion.p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 text-primary-foreground font-semibold rounded-lg hover:shadow-[0_0_20px_hsl(350_72%_50%/0.4)] transition-all"
+              style={{ background: 'linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))' }}
+            >
+              Talk to Our Engineering Team
+            </a>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-all"
+            >
+              Request a Solution Demo
+            </a>
+          </div>
+        </div>
+      </section>
 
     </div>
   );

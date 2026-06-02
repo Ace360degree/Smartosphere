@@ -13,7 +13,7 @@ const MHITS = () => {
         }
 
         .gk-wrap {
-          max-width: 760px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 32px;
         }
@@ -54,7 +54,7 @@ const MHITS = () => {
         }
 
         .gk-h1 {
-          font-size: 32px;
+          font-size: 48px;
           font-weight: 700;
           letter-spacing: -0.5px;
           margin: 0;
@@ -63,7 +63,7 @@ const MHITS = () => {
         }
 
         .gk-hero-subtitle {
-          font-size: 17px;
+          font-size: 24px;
           font-weight: 600;
           color: #EC8209;
           margin: 0 0 20px 0;
@@ -71,10 +71,11 @@ const MHITS = () => {
         }
 
         .gk-hero-desc {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0 0 32px 0;
+          max-width: 840px;
         }
 
         .gk-btn-primary {
@@ -134,7 +135,7 @@ const MHITS = () => {
         }
 
         .gk-h2 {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -143,10 +144,11 @@ const MHITS = () => {
         }
 
         .gk-body {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0;
+          max-width: 700px;
         }
 
         .gk-body + .gk-body {
@@ -155,7 +157,7 @@ const MHITS = () => {
 
         /* Core Capabilities Grid */
         .gk-caps-title {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           text-align: center;
@@ -193,7 +195,7 @@ const MHITS = () => {
         }
 
         .gk-cap-title {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 700;
           color: #EC8209;
           margin: 0 0 10px 0;
@@ -201,7 +203,7 @@ const MHITS = () => {
         }
 
         .gk-cap-desc {
-          font-size: 13.5px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0;
@@ -236,7 +238,7 @@ const MHITS = () => {
         }
 
         .gk-cta-title {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -245,7 +247,7 @@ const MHITS = () => {
         }
 
         .gk-cta-desc {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0 auto 32px auto;
@@ -260,7 +262,7 @@ const MHITS = () => {
         }
 
         .gk-cta-footer {
-          font-size: 13px;
+          font-size: 14px;
           color: #4b5563;
           margin: 40px 0 0 0;
           font-style: italic;

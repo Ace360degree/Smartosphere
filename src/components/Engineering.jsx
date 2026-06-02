@@ -85,7 +85,7 @@ const Engineering = () => {
           min-height: 100vh;
           padding-top: 80px;
         }
-        .container {
+        .eng-container {
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 24px;
@@ -225,7 +225,7 @@ const Engineering = () => {
         {/* Hero */}
         <section className="hero-section">
           <div className="hero-bg-accent" />
-          <div className="container">
+          <div className="eng-container">
             <div>
               <span className="hero-label">Engineering &amp; R&amp;D</span>
               <h1 className="hero-title">
@@ -242,7 +242,7 @@ const Engineering = () => {
 
         {/* Philosophy */}
         <section className="philosophy-section">
-          <div className="container">
+          <div className="eng-container">
             <div>
               <h2 className="philosophy-title">Our Engineering Philosophy</h2>
               <p className="philosophy-desc">
@@ -263,7 +263,7 @@ const Engineering = () => {
 
         {/* Capabilities */}
         <section className="capabilities-section">
-          <div className="container" style={{ paddingBottom: '100px' }}>
+          <div className="eng-container" style={{ paddingBottom: '100px' }}>
             <div className="capabilities-grid">
               {sections.map((section, i) => (
                 <div key={section.title} className="capability-card">

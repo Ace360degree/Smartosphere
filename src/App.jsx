@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
+import RequestDemoModal from './components/RequestDemoModal';
 import Hero from './components/Hero';
 import Intro from './components/Intro';
 import Approach from './components/Approach';
@@ -40,6 +41,7 @@ import SmartosphereCapital from './components/SmartosphereCapital';
 
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
   const [dynamicCaseStudy, setDynamicCaseStudy] = useState(null);
   const [loadingCaseStudy, setLoadingCaseStudy] = useState(false);
   const [dynamicBlog, setDynamicBlog] = useState(null);
@@ -192,7 +194,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
+      <Header onRequestDemo={() => setIsDemoModalOpen(true)} />
       {isAboutPage ? (
         <AboutUs />
       ) : isCaseStudiesPage ? (
@@ -270,6 +272,7 @@ function App() {
         </>
       )}
       <Footer />
+      <RequestDemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
     </div>
   );
 }

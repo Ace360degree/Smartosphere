@@ -12,7 +12,7 @@ const BillboardPortal = () => {
           padding-top: 80px;
         }
         .gk-wrap {
-          max-width: 760px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 32px;
         }
@@ -46,7 +46,7 @@ const BillboardPortal = () => {
           justify-content: center;
         }
         .gk-h1 {
-          font-size: 32px;
+          font-size: 48px;
           font-weight: 700;
           letter-spacing: -0.5px;
           margin: 0;
@@ -54,17 +54,18 @@ const BillboardPortal = () => {
           color: #ffffff;
         }
         .gk-hero-subtitle {
-          font-size: 17px;
+          font-size: 24px;
           font-weight: 600;
           color: #EC8209;
           margin: 0 0 20px 0;
           line-height: 1.4;
         }
         .gk-hero-desc {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0 0 32px 0;
+          max-width: 800px;
         }
         .gk-btn-primary {
           display: inline-flex;
@@ -116,7 +117,7 @@ const BillboardPortal = () => {
         }
         .gk-section:last-of-type { border-bottom: none; }
         .gk-h2 {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -124,13 +125,13 @@ const BillboardPortal = () => {
           letter-spacing: -0.3px;
         }
         .gk-body {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0;
         }
         .gk-caps-title {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           text-align: center;
@@ -156,14 +157,14 @@ const BillboardPortal = () => {
         .gk-cap-cell:nth-child(2n) { border-right: none; }
         .gk-cap-cell:nth-last-child(-n+1) { border-bottom: none; }
         .gk-cap-title {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 700;
           color: #EC8209;
           margin: 0 0 10px 0;
           line-height: 1.3;
         }
         .gk-cap-desc {
-          font-size: 13.5px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0;
@@ -176,7 +177,7 @@ const BillboardPortal = () => {
         }
         .gk-tag {
           display: inline-block;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
           color: #EC8209;
           background: rgba(236, 130, 9, 0.08);
@@ -192,7 +193,7 @@ const BillboardPortal = () => {
           text-align: center;
         }
         .gk-cta-title {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -200,7 +201,7 @@ const BillboardPortal = () => {
           letter-spacing: -0.4px;
         }
         .gk-cta-desc {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0 auto 32px auto;
@@ -213,7 +214,7 @@ const BillboardPortal = () => {
           flex-wrap: wrap;
         }
         .gk-cta-footer {
-          font-size: 13px;
+          font-size: 14px;
           color: #4b5563;
           margin: 40px 0 0 0;
           font-style: italic;
@@ -258,10 +259,10 @@ const BillboardPortal = () => {
           <p className="gk-hero-subtitle">Centralised Cloud Platform for Billboard Network Management</p>
 
           <p className="gk-hero-desc">
-            Billboard Portal is SmartoSphere's cloud-based software platform designed to provide centralised visibility, 
-            control, and operational insight across single or multi-location billboard networks. While Billboard Controls 
-            manages on-site hardware, Billboard Portal acts as the command centre, bringing data from all connected 
-            billboards into one unified interface. The platform enables operators to monitor performance, track uptime, 
+            Billboard Portal is SmartoSphere's cloud-based software platform designed to provide centralised visibility,
+            control, and operational insight across single or multi-location billboard networks. While Billboard Controls
+            manages on-site hardware, Billboard Portal acts as the command centre, bringing data from all connected
+            billboards into one unified interface. The platform enables operators to monitor performance, track uptime,
             and manage operations efficiently—without being tied to individual sites.
           </p>
 
@@ -282,10 +283,10 @@ const BillboardPortal = () => {
         <div className="gk-section">
           <h2 className="gk-h2">The Challenge</h2>
           <p className="gk-body">
-            As billboard networks expand, managing individual locations becomes increasingly complex. Operators often 
-            lack a single view of performance, rely on manual status checks, or respond to issues only after downtime 
-            occurs. Without centralised software, visibility across locations is limited and decision-making becomes 
-            reactive rather than proactive. Billboard Portal addresses this challenge by consolidating operational 
+            As billboard networks expand, managing individual locations becomes increasingly complex. Operators often
+            lack a single view of performance, rely on manual status checks, or respond to issues only after downtime
+            occurs. Without centralised software, visibility across locations is limited and decision-making becomes
+            reactive rather than proactive. Billboard Portal addresses this challenge by consolidating operational
             data into a single, accessible platform.
           </p>
         </div>
@@ -296,9 +297,9 @@ const BillboardPortal = () => {
         <div className="gk-section">
           <h2 className="gk-h2">The Billboard Portal Approach</h2>
           <p className="gk-body">
-            Billboard Portal is built to deliver network-level intelligence. The platform collects operational data 
-            from each connected billboard—via on-site control units—and presents it through a secure, cloud-hosted 
-            dashboard. This allows operators to monitor infrastructure in real time, identify trends, and take 
+            Billboard Portal is built to deliver network-level intelligence. The platform collects operational data
+            from each connected billboard—via on-site control units—and presents it through a secure, cloud-hosted
+            dashboard. This allows operators to monitor infrastructure in real time, identify trends, and take
             informed action across the entire network rather than managing each billboard in isolation.
           </p>
         </div>
@@ -312,39 +313,39 @@ const BillboardPortal = () => {
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Unified Network Dashboard</h3>
               <p className="gk-cap-desc">
-                Billboard Portal provides a centralised view of all connected billboards. Operators can instantly 
-                see the operational status of each unit, making it easier to manage large or geographically 
+                Billboard Portal provides a centralised view of all connected billboards. Operators can instantly
+                see the operational status of each unit, making it easier to manage large or geographically
                 distributed networks.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Live Status &amp; Performance Visibility</h3>
               <p className="gk-cap-desc">
-                The platform displays real-time data related to uptime, operational health, and system events. 
-                This continuous visibility helps identify issues early and maintain consistent performance 
+                The platform displays real-time data related to uptime, operational health, and system events.
+                This continuous visibility helps identify issues early and maintain consistent performance
                 across the network.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Operational History &amp; Reporting</h3>
               <p className="gk-cap-desc">
-                Billboard Portal maintains historical records of performance and events. These insights support 
+                Billboard Portal maintains historical records of performance and events. These insights support
                 operational reviews, maintenance planning, and reporting requirements for management or stakeholders.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Alerts &amp; Notifications</h3>
               <p className="gk-cap-desc">
-                Configurable alerts notify operators of critical events such as downtime or abnormal behaviour. 
-                Notifications can be delivered through defined channels, enabling timely intervention without 
+                Configurable alerts notify operators of critical events such as downtime or abnormal behaviour.
+                Notifications can be delivered through defined channels, enabling timely intervention without
                 constant manual monitoring.
               </p>
             </div>
             <div className="gk-cap-cell gk-cap-last" style={{ gridColumn: '1 / -1', borderBottom: 'none' }}>
               <h3 className="gk-cap-title">Scalable, Cloud-Based Architecture</h3>
               <p className="gk-cap-desc">
-                Designed for scalability, Billboard Portal can manage anything from a few billboards to large, 
-                multi-city networks. As new locations are added, they can be integrated seamlessly without 
+                Designed for scalability, Billboard Portal can manage anything from a few billboards to large,
+                multi-city networks. As new locations are added, they can be integrated seamlessly without
                 changes to the core platform.
               </p>
             </div>
@@ -357,8 +358,8 @@ const BillboardPortal = () => {
         <div className="gk-section">
           <h2 className="gk-h2">How Billboard Portal Works</h2>
           <p className="gk-body">
-            Each billboard equipped with a control unit sends operational data to the cloud platform. Billboard 
-            Portal aggregates this data, processes it, and presents actionable insights through a web-based 
+            Each billboard equipped with a control unit sends operational data to the cloud platform. Billboard
+            Portal aggregates this data, processes it, and presents actionable insights through a web-based
             dashboard. This architecture ensures reliable access to information from anywhere, at any time.
           </p>
         </div>
@@ -369,9 +370,9 @@ const BillboardPortal = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Use Cases</h2>
           <p className="gk-body">
-            Billboard Portal is used by organisations responsible for managing digital and outdoor advertising 
-            infrastructure. It supports media operators, outdoor advertising agencies, and infrastructure owners by 
-            enabling centralised oversight, improved operational efficiency, and data-driven decision-making. 
+            Billboard Portal is used by organisations responsible for managing digital and outdoor advertising
+            infrastructure. It supports media operators, outdoor advertising agencies, and infrastructure owners by
+            enabling centralised oversight, improved operational efficiency, and data-driven decision-making.
             The platform is especially valuable for networks spanning multiple locations or cities.
           </p>
         </div>
@@ -395,10 +396,10 @@ const BillboardPortal = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Why Billboard Portal by SmartoSphere</h2>
           <p className="gk-body">
-            Billboard Portal is designed with a focus on clarity, scalability, and operational efficiency. 
-            By providing a single source of truth for billboard networks, it helps organisations reduce 
-            downtime, improve response times, and manage infrastructure more effectively. Because the 
-            platform is developed as part of an integrated ecosystem, it can be adapted to match 
+            Billboard Portal is designed with a focus on clarity, scalability, and operational efficiency.
+            By providing a single source of truth for billboard networks, it helps organisations reduce
+            downtime, improve response times, and manage infrastructure more effectively. Because the
+            platform is developed as part of an integrated ecosystem, it can be adapted to match
             specific operational workflows and reporting needs.
           </p>
         </div>
@@ -409,7 +410,7 @@ const BillboardPortal = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Deployment &amp; Customisation</h2>
           <p className="gk-body">
-            Billboard Portal can be deployed for small networks or scaled across large multi-city operations. 
+            Billboard Portal can be deployed for small networks or scaled across large multi-city operations.
             Dashboards, alerts, and reporting formats can be customised to align with organisational requirements.
           </p>
         </div>
@@ -420,7 +421,7 @@ const BillboardPortal = () => {
         <div className="gk-wrap" style={{ textAlign: 'center' }}>
           <h2 className="gk-cta-title">Start a Conversation</h2>
           <p className="gk-cta-desc">
-            If you need a central platform to monitor and manage your billboard infrastructure with 
+            If you need a central platform to monitor and manage your billboard infrastructure with
             confidence, Billboard Portal can be configured to fit your network.
           </p>
           <div className="gk-cta-btns">

@@ -12,7 +12,7 @@ const RadiationElectronics = () => {
           padding-top: 80px;
         }
         .gk-wrap {
-          max-width: 760px;
+          max-width: 1000px;
           margin: 0 auto;
           padding: 0 32px;
         }
@@ -46,7 +46,7 @@ const RadiationElectronics = () => {
           justify-content: center;
         }
         .gk-h1 {
-          font-size: 32px;
+          font-size: 48px;
           font-weight: 700;
           letter-spacing: -0.5px;
           margin: 0;
@@ -54,14 +54,14 @@ const RadiationElectronics = () => {
           color: #ffffff;
         }
         .gk-hero-subtitle {
-          font-size: 17px;
+          font-size: 24px;
           font-weight: 600;
           color: #EC8209;
           margin: 0 0 20px 0;
           line-height: 1.4;
         }
         .gk-hero-desc {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0 0 32px 0;
@@ -116,7 +116,7 @@ const RadiationElectronics = () => {
         }
         .gk-section:last-of-type { border-bottom: none; }
         .gk-h2 {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -124,13 +124,13 @@ const RadiationElectronics = () => {
           letter-spacing: -0.3px;
         }
         .gk-body {
-          font-size: 15px;
+          font-size: 18px;
           color: #9ca3af;
           line-height: 1.75;
           margin: 0;
         }
         .gk-caps-title {
-          font-size: 22px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           text-align: center;
@@ -156,14 +156,14 @@ const RadiationElectronics = () => {
         .gk-cap-cell:nth-child(2n) { border-right: none; }
         .gk-cap-cell:nth-last-child(-n+2) { border-bottom: none; }
         .gk-cap-title {
-          font-size: 14px;
+          font-size: 18px;
           font-weight: 700;
           color: #EC8209;
           margin: 0 0 10px 0;
           line-height: 1.3;
         }
         .gk-cap-desc {
-          font-size: 13.5px;
+          font-size: 14px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0;
@@ -176,7 +176,7 @@ const RadiationElectronics = () => {
         }
         .gk-tag {
           display: inline-block;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: 500;
           color: #EC8209;
           background: rgba(236, 130, 9, 0.08);
@@ -192,7 +192,7 @@ const RadiationElectronics = () => {
           text-align: center;
         }
         .gk-cta-title {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
           color: #ffffff;
           font-family: 'Space Grotesk', -apple-system, sans-serif;
@@ -200,7 +200,7 @@ const RadiationElectronics = () => {
           letter-spacing: -0.4px;
         }
         .gk-cta-desc {
-          font-size: 15px;
+          font-size: 16px;
           color: #9ca3af;
           line-height: 1.65;
           margin: 0 auto 32px auto;
@@ -213,7 +213,7 @@ const RadiationElectronics = () => {
           flex-wrap: wrap;
         }
         .gk-cta-footer {
-          font-size: 13px;
+          font-size: 14px;
           color: #4b5563;
           margin: 40px 0 0 0;
           font-style: italic;
@@ -264,10 +264,10 @@ const RadiationElectronics = () => {
           <p className="gk-hero-subtitle">Specialised Electronic Systems for Radiation Measurement &amp; Safety</p>
 
           <p className="gk-hero-desc">
-            Radiation Electronics is SmartoSphere's specialised solution for radiation detection, measurement, and safety 
-            monitoring. The system combines precision electronic hardware with embedded intelligence and secure data 
-            handling to deliver reliable radiation monitoring in research, industrial, and regulated environments. 
-            Engineered for accuracy and stability, the solution supports continuous monitoring where safety and 
+            Radiation Electronics is SmartoSphere's specialised solution for radiation detection, measurement, and safety
+            monitoring. The system combines precision electronic hardware with embedded intelligence and secure data
+            handling to deliver reliable radiation monitoring in research, industrial, and regulated environments.
+            Engineered for accuracy and stability, the solution supports continuous monitoring where safety and
             compliance are paramount.
           </p>
 
@@ -288,10 +288,10 @@ const RadiationElectronics = () => {
         <div className="gk-section">
           <h2 className="gk-h2">The Challenge</h2>
           <p className="gk-body">
-            Radiation monitoring environments require highly sensitive and stable measurement systems. Generic instruments 
-            often lack the precision, configurability, or integration capability needed for specialised workflows. 
-            Delayed data access, manual logging, and limited alerting increase safety risks and compliance gaps. 
-            Radiation Electronics addresses these challenges with purpose-built electronic systems designed for 
+            Radiation monitoring environments require highly sensitive and stable measurement systems. Generic instruments
+            often lack the precision, configurability, or integration capability needed for specialised workflows.
+            Delayed data access, manual logging, and limited alerting increase safety risks and compliance gaps.
+            Radiation Electronics addresses these challenges with purpose-built electronic systems designed for
             real-world radiation monitoring.
           </p>
         </div>
@@ -302,9 +302,9 @@ const RadiationElectronics = () => {
         <div className="gk-section">
           <h2 className="gk-h2">The Radiation Electronics Approach</h2>
           <p className="gk-body">
-            The solution focuses on precision measurement at the hardware level and intelligent data processing at the 
-            software level. Radiation sensors capture measurement data, which is processed by embedded electronics and 
-            transmitted securely to a monitoring platform. This ensures accurate, continuous, and auditable 
+            The solution focuses on precision measurement at the hardware level and intelligent data processing at the
+            software level. Radiation sensors capture measurement data, which is processed by embedded electronics and
+            transmitted securely to a monitoring platform. This ensures accurate, continuous, and auditable
             radiation data for safety and compliance purposes.
           </p>
         </div>
@@ -318,28 +318,28 @@ const RadiationElectronics = () => {
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Radiation Detection &amp; Measurement</h3>
               <p className="gk-cap-desc">
-                The system supports accurate detection and measurement of radiation levels using specialised sensors. 
+                The system supports accurate detection and measurement of radiation levels using specialised sensors.
                 Data is captured continuously with high sensitivity and stability for reliable monitoring.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Real-Time Alerts &amp; Safety Monitoring</h3>
               <p className="gk-cap-desc">
-                Configurable thresholds trigger immediate alerts when radiation levels exceed safe limits. This 
+                Configurable thresholds trigger immediate alerts when radiation levels exceed safe limits. This
                 enables rapid response and ensures compliance with safety protocols.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Data Logging &amp; Reporting</h3>
               <p className="gk-cap-desc">
-                All measurement data is logged and stored securely, supporting audits, compliance reviews, and 
+                All measurement data is logged and stored securely, supporting audits, compliance reviews, and
                 historical analysis. Reports can be generated to meet regulatory requirements.
               </p>
             </div>
             <div className="gk-cap-cell">
               <h3 className="gk-cap-title">Safety-Focused Design</h3>
               <p className="gk-cap-desc">
-                The hardware and firmware are designed with safety as the primary consideration. Redundancy, 
+                The hardware and firmware are designed with safety as the primary consideration. Redundancy,
                 stability, and fail-safe behaviour ensure reliable operation in critical environments.
               </p>
             </div>
@@ -352,8 +352,8 @@ const RadiationElectronics = () => {
         <div className="gk-section">
           <h2 className="gk-h2">How Radiation Electronics Works</h2>
           <p className="gk-body">
-            Radiation sensors capture measurement data, which is processed by the embedded electronic system and 
-            transmitted to the monitoring platform. The platform provides real-time visibility, historical trends, 
+            Radiation sensors capture measurement data, which is processed by the embedded electronic system and
+            transmitted to the monitoring platform. The platform provides real-time visibility, historical trends,
             and automated alerts, enabling operators to maintain continuous safety oversight.
           </p>
         </div>
@@ -364,7 +364,7 @@ const RadiationElectronics = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Use Cases</h2>
           <p className="gk-body">
-            Radiation Electronics is deployed in research laboratories, nuclear facilities, medical environments using 
+            Radiation Electronics is deployed in research laboratories, nuclear facilities, medical environments using
             radiation equipment, and industrial settings where radiation monitoring is required for safety and compliance.
           </p>
         </div>
@@ -389,8 +389,8 @@ const RadiationElectronics = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Why Radiation Electronics by SmartoSphere</h2>
           <p className="gk-body">
-            Radiation Electronics is developed with a focus on precision, reliability, and safety. By engineering the 
-            complete system in-house, SmartoSphere ensures tight integration between hardware, firmware, and software, 
+            Radiation Electronics is developed with a focus on precision, reliability, and safety. By engineering the
+            complete system in-house, SmartoSphere ensures tight integration between hardware, firmware, and software,
             enabling customisation for specific monitoring requirements and regulatory standards.
           </p>
         </div>
@@ -401,7 +401,7 @@ const RadiationElectronics = () => {
         <div className="gk-section">
           <h2 className="gk-h2">Deployment &amp; Customisation</h2>
           <p className="gk-body">
-            The solution can be deployed for individual monitoring points or scaled across facilities. Sensor configurations, 
+            The solution can be deployed for individual monitoring points or scaled across facilities. Sensor configurations,
             alert thresholds, and reporting formats can be customised to align with operational and regulatory needs.
           </p>
         </div>
@@ -412,7 +412,7 @@ const RadiationElectronics = () => {
         <div className="gk-wrap" style={{ textAlign: 'center' }}>
           <h2 className="gk-cta-title">Start a Conversation</h2>
           <p className="gk-cta-desc">
-            If your environment requires reliable radiation monitoring with precision electronics and safety-first 
+            If your environment requires reliable radiation monitoring with precision electronics and safety-first
             design, Radiation Electronics can be tailored to your requirements.
           </p>
           <div className="gk-cta-btns">

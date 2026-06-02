@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 
-const Header = () => {
+const Header = ({ onRequestDemo }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -364,7 +364,7 @@ const Header = () => {
         </nav>
 
         <div className="header-actions">
-          <button className="demo-btn">REQUEST A DEMO!</button>
+          <button className="demo-btn" onClick={onRequestDemo}>REQUEST A DEMO!</button>
           <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <div className={`hamburger ${isMenuOpen ? 'open' : ''}`}></div>
           </button>
