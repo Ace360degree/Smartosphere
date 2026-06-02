@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CustomCursor from './components/CustomCursor';
 import Header from './components/Header';
 import RequestDemoModal from './components/RequestDemoModal';
 import Hero from './components/Hero';
@@ -42,6 +43,16 @@ import SmartosphereCapital from './components/SmartosphereCapital';
 function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
   const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
+  const [pageLoaded, setPageLoaded] = useState(false);
+
+  // Page transition fade-in — triggers on every route change
+  useEffect(() => {
+    setPageLoaded(false);
+    const raf = requestAnimationFrame(() => {
+      setPageLoaded(true);
+    });
+    return () => cancelAnimationFrame(raf);
+  }, [currentPath]);
   const [dynamicCaseStudy, setDynamicCaseStudy] = useState(null);
   const [loadingCaseStudy, setLoadingCaseStudy] = useState(false);
   const [dynamicBlog, setDynamicBlog] = useState(null);
@@ -193,8 +204,26 @@ function App() {
   }, [currentPath, isAboutPage, isSolutionsPage, isGokartServomotorPage, isGeoTrackerPage, isMHITSPage, isMFlashPage, isLaplokPage, isBillboardControlsPage, isBillboardPortalPage, isBioMedPage, isRadiationElectronicsPage, isEngineeringPage, isEcosystemPage, isTechnicalitiesPage, isCapitalPage, isIndustriesPage, isBlogsPage, isContactPage, isPrivacyPolicyPage, isTermsPage, isDisclaimerPage, isBillboardNetworkManagementPage, isBiomedicalMonitoringPage, isGoKartTrackControlPage, isRadiationSafetyMonitoringPage, dynamicCaseStudy, dynamicBlog]);
 
   return (
-    <div className="app">
+    <>
+      <style>{`
+        .page-transition {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        .page-transition.page-visible {
+          animation: pageFadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+        @keyframes pageFadeIn {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
+      <CustomCursor />
+      <div className="app">
       <Header onRequestDemo={() => setIsDemoModalOpen(true)} />
+      <div className={`page-transition${pageLoaded ? ' page-visible' : ''}`}>
       {isAboutPage ? (
         <AboutUs />
       ) : isCaseStudiesPage ? (
@@ -271,9 +300,11 @@ function App() {
           <WhySmartosphere />
         </>
       )}
+      </div>
       <Footer />
       <RequestDemoModal isOpen={isDemoModalOpen} onClose={() => setIsDemoModalOpen(false)} />
-    </div>
+      </div>
+    </>
   );
 }
 

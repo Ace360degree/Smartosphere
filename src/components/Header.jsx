@@ -177,6 +177,10 @@ const Header = ({ onRequestDemo }) => {
           box-shadow: 0 4px 15px rgba(235, 28, 36, 0.3);
         }
 
+        .mobile-demo-btn-container {
+          display: none;
+        }
+
         .menu-toggle {
           display: none;
           background: none;
@@ -210,6 +214,23 @@ const Header = ({ onRequestDemo }) => {
         }
 
         @media (max-width: 1024px) {
+          .desktop-demo-btn {
+            display: none;
+          }
+
+          .mobile-demo-btn-container {
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            border-bottom: none !important;
+          }
+
+          .mobile-demo-btn-container .demo-btn {
+            width: 100%;
+            padding: 14px 24px;
+            margin-top: 10px;
+          }
+
           .nav {
             position: fixed;
             top: 80px;
@@ -324,6 +345,8 @@ const Header = ({ onRequestDemo }) => {
                     if (item.hasDropdown && window.innerWidth <= 1024) {
                       e.preventDefault();
                       setIsDropdownOpen(!isDropdownOpen);
+                    } else {
+                      setIsMenuOpen(false);
                     }
                   }}
                 >
@@ -350,7 +373,10 @@ const Header = ({ onRequestDemo }) => {
                     <ul className="dropdown-list">
                       {solutions.map((sol) => (
                         <li key={sol} className="dropdown-item">
-                          <a href={sol === 'View All Solutions' ? '/solutions' : `/${sol.toLowerCase().replace(' ', '-')}`}>
+                          <a 
+                            href={sol === 'View All Solutions' ? '/solutions' : `/${sol.toLowerCase().replace(' ', '-')}`}
+                            onClick={() => setIsMenuOpen(false)}
+                          >
                             {sol}
                           </a>
                         </li>
@@ -360,11 +386,22 @@ const Header = ({ onRequestDemo }) => {
                 )}
               </li>
             ))}
+            <li className="nav-item mobile-demo-btn-container">
+              <button 
+                className="demo-btn" 
+                onClick={() => {
+                  onRequestDemo();
+                  setIsMenuOpen(false);
+                }}
+              >
+                REQUEST A DEMO!
+              </button>
+            </li>
           </ul>
         </nav>
 
         <div className="header-actions">
-          <button className="demo-btn" onClick={onRequestDemo}>REQUEST A DEMO!</button>
+          <button className="demo-btn desktop-demo-btn" onClick={onRequestDemo}>REQUEST A DEMO!</button>
           <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <div className={`hamburger ${isMenuOpen ? 'open' : ''}`}></div>
           </button>
