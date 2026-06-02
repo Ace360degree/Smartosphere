@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollReveal from './ScrollReveal';
 import {
   Cpu,
   CircuitBoard,
@@ -223,6 +224,7 @@ const Engineering = () => {
 
       <main>
         {/* Hero */}
+        <ScrollReveal>
         <section className="hero-section">
           <div className="hero-bg-accent" />
           <div className="eng-container">
@@ -239,8 +241,10 @@ const Engineering = () => {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* Philosophy */}
+        <ScrollReveal>
         <section className="philosophy-section">
           <div className="eng-container">
             <div>
@@ -260,8 +264,10 @@ const Engineering = () => {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* Capabilities */}
+        <ScrollReveal>
         <section className="capabilities-section">
           <div className="eng-container" style={{ paddingBottom: '100px' }}>
             <div className="capabilities-grid">
@@ -277,6 +283,7 @@ const Engineering = () => {
             </div>
           </div>
         </section>
+        </ScrollReveal>
       </main>
     </div>
   );

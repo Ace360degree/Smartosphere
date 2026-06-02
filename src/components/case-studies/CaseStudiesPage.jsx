@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import ScrollReveal from '../ScrollReveal';
 import Methodology from './Methodology';
 import SelectedCaseStudies from './SelectedCaseStudies';
 import CaseStudiesCTA from './CaseStudiesCTA';
@@ -511,10 +512,17 @@ const CaseStudiesPage = () => {
         </div>
       </section>
 
+      <ScrollReveal>
       <Methodology />
+      </ScrollReveal>
 
+      <ScrollReveal>
       <SelectedCaseStudies />
+      </ScrollReveal>
+
+      <ScrollReveal>
       <CaseStudiesCTA />
+      </ScrollReveal>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import VortexCursor from './components/VortexCursor';
+import ScrollReveal from './components/ScrollReveal';
 import Header from './components/Header';
 import RequestDemoModal from './components/RequestDemoModal';
 import Hero from './components/Hero';
@@ -291,13 +292,13 @@ function App() {
       ) : (
         <>
           <Hero />
-          <Intro />
-          <Approach />
-          <Portfolio />
-          <Reliability />
-          <CaseStudies />
-          <Blog />
-          <WhySmartosphere />
+          <ScrollReveal delay={0}><Intro /></ScrollReveal>
+          <ScrollReveal delay={0}><Approach /></ScrollReveal>
+          <ScrollReveal delay={0}><Portfolio /></ScrollReveal>
+          <ScrollReveal delay={0}><Reliability /></ScrollReveal>
+          <ScrollReveal delay={0}><CaseStudies /></ScrollReveal>
+          <ScrollReveal delay={0}><Blog /></ScrollReveal>
+          <ScrollReveal delay={0}><WhySmartosphere /></ScrollReveal>
         </>
       )}
       </div>

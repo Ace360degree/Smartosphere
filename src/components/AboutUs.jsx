@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
+import ScrollReveal from './ScrollReveal';
 import CompanyOverview from './CompanyOverview';
 import VisionMission from './VisionMission';
 import OurValues from './OurValues';
@@ -253,25 +254,25 @@ const AboutUs = () => {
       </section>
 
       {/* Company Overview Section Component */}
-      <CompanyOverview />
+      <ScrollReveal><CompanyOverview /></ScrollReveal>
 
       {/* Vision & Mission Section Component */}
-      <VisionMission />
+      <ScrollReveal><VisionMission /></ScrollReveal>
 
       {/* Our Values Section Component */}
-      <OurValues />
+      <ScrollReveal><OurValues /></ScrollReveal>
 
       {/* Our Journey Section Component */}
-      <OurJourney />
+      <ScrollReveal><OurJourney /></ScrollReveal>
 
       {/* Leadership & Team Section Component */}
-      <LeadershipTeam />
+      <ScrollReveal><LeadershipTeam /></ScrollReveal>
 
       {/* Engineering Philosophy Section Component */}
-      <EngineeringPhilosophy />
+      <ScrollReveal><EngineeringPhilosophy /></ScrollReveal>
 
       {/* Looking Ahead Section Component */}
-      <LookingAhead />
+      <ScrollReveal><LookingAhead /></ScrollReveal>
     </div>
   );
 };

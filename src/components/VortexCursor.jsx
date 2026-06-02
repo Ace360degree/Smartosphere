@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 export default function VortexCursor({
   lineWidthStart = 10,
@@ -9,6 +9,11 @@ export default function VortexCursor({
   smoothing = 0.15,
   fullScreen = true
 }) {
+  // Don't render on touch / mobile devices
+  const [isTouchDevice] = useState(
+    () => typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0)
+  );
+
   const canvasRef = useRef(null);
   const pointsRef = useRef([]);
   const requestRef = useRef(null);
@@ -16,6 +21,9 @@ export default function VortexCursor({
   const mouseTarget = useRef({ x: -100, y: -100 });
   const currentMouse = useRef({ x: -100, y: -100 });
   const isFirstMove = useRef(true);
+
+  // Skip entirely on touch/mobile — no cursor trail needed there
+  if (isTouchDevice) return null;
 
   useEffect(() => {
     const canvas = canvasRef.current;
