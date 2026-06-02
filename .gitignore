@@ -26,3 +26,4 @@ dist-ssr
 # WordPress and Administration
 admin/
 blogs/
+pnpm-lock.yaml
