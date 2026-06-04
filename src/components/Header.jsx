@@ -9,7 +9,6 @@ const Header = ({ onRequestDemo }) => {
     { name: 'Solutions', hasDropdown: true },
     { name: 'Industries', hasDropdown: false },
     { name: 'Engineering', hasDropdown: false },
-    { name: 'Ecosystem', hasDropdown: false },
     { name: 'Case Studies', hasDropdown: false },
     { name: 'Blogs', hasDropdown: false },
     { name: 'About Us', hasDropdown: false },
@@ -373,7 +372,7 @@ const Header = ({ onRequestDemo }) => {
                     <ul className="dropdown-list">
                       {solutions.map((sol) => (
                         <li key={sol} className="dropdown-item">
-                          <a 
+                          <a
                             href={sol === 'View All Solutions' ? '/solutions' : `/${sol.toLowerCase().replace(' ', '-')}`}
                             onClick={() => setIsMenuOpen(false)}
                           >
@@ -387,8 +386,8 @@ const Header = ({ onRequestDemo }) => {
               </li>
             ))}
             <li className="nav-item mobile-demo-btn-container">
-              <button 
-                className="demo-btn" 
+              <button
+                className="demo-btn"
                 onClick={() => {
                   onRequestDemo();
                   setIsMenuOpen(false);

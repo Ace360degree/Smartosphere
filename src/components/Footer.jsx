@@ -11,7 +11,7 @@ const Footer = () => {
   ];
 
   const explore = [
-    'Industries', 'Engineering', 'Ecosystem', 'Case Studies', 'Blogs', 'About Us'
+    'Industries', 'Engineering', 'Case Studies', 'Blogs', 'About Us'
   ];
 
   return (
@@ -171,10 +171,7 @@ const Footer = () => {
               <Mail size={18} className="contact-icon" />
               <a href="mailto:info@smartospheresolutions.com">info@smartospheresolutions.com</a>
             </li>
-            <li>
-              <Phone size={18} className="contact-icon" />
-              <span>+91-XXXXXXXXXX</span>
-            </li>
+
             <li>
               <MapPin size={18} className="contact-icon" />
               <span>India</span>
