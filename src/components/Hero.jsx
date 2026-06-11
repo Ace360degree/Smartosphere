@@ -316,8 +316,8 @@ const Hero = () => {
         </p>
 
         <div className="hero-actions">
-          <button className="btn-primary">Explore Solutions &rarr;</button>
-          <button className="btn-outline">Request a Demo</button>
+          <a className="btn-primary" href="/solutions">Explore Solutions &rarr;</a>
+          {/* <button className="btn-outline">Request a Demo</button> */}
         </div>
       </div>
 
