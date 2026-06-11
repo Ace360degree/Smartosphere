@@ -3,7 +3,7 @@ import LegalPageLayout from "./LegalPageLayout";
 
 const contact = {
   company: "SmartoSphere Solutions LLP",
-  email: "info@smartospheresolutions.com",
+  email: "boa@smartospheresolutions.com",
   website: "https://smartospheresolutions.com",
 };
 

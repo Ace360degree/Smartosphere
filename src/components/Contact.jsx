@@ -791,11 +791,8 @@ const Contact = () => {
                     <Mail size={18} className="info-card-icon" />
                     <span className="info-card-title">Email</span>
                   </div>
-                  <a href="mailto:info@smartospheresolutions.com" className="info-link">
-                    info@smartospheresolutions.com
-                  </a>
-                  <a href="mailto:engineering@smartospheresolutions.com" className="info-sublink">
-                    engineering@smartospheresolutions.com
+                  <a href="mailto:boa@smartospheresolutions.com" className="info-link">
+                    boa@smartospheresolutions.com
                   </a>
                 </div>
                 <div className="info-card">

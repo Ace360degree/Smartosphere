@@ -169,7 +169,7 @@ const Footer = () => {
           <ul className="contact-list">
             <li>
               <Mail size={18} className="contact-icon" />
-              <a href="mailto:info@smartospheresolutions.com">info@smartospheresolutions.com</a>
+              <a href="mailto:boa@smartospheresolutions.com">boa@smartospheresolutions.com</a>
             </li>
 
             <li>
