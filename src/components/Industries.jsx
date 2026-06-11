@@ -492,7 +492,7 @@ const Industries = () => {
               engineer a solution tailored to your requirements.
             </p>
             <div className="ind-cta-btns">
-              <a href="#contact" className="cta-btn-primary">
+              <a href="/contact" className="cta-btn-primary">
                 Discuss Your Industry Use Case
               </a>
               <a href="#contact" className="cta-btn-secondary">

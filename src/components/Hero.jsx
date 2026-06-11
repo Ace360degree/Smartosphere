@@ -317,7 +317,7 @@ const Hero = () => {
 
         <div className="hero-actions">
           <a className="btn-primary" href="/solutions">Explore Solutions &rarr;</a>
-          {/* <button className="btn-outline">Request a Demo</button> */}
+          {/* <button className="btn-outline">Get in Touch</button> */}
         </div>
       </div>
 

@@ -331,7 +331,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
             {/* Header */}
             <div className="demo-modal-header">
               <div className="demo-modal-header-left">
-                <h3 className="demo-modal-title">Request a Demo</h3>
+                <h3 className="demo-modal-title">Get in Touch</h3>
                 <p className="demo-modal-subtitle">Please fill your details</p>
               </div>
               <button onClick={onClose} className="demo-modal-close-btn" aria-label="Close modal">
@@ -458,7 +458,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
                       "Confirming..."
                     ) : (
                       <>
-                        Confirm Appointment
+                        Submit Your Request
                         <Send size={15} />
                       </>
                     )}

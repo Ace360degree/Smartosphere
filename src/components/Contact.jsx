@@ -994,7 +994,7 @@ const Contact = () => {
             className="demo-btn-container"
           >
             <a href="#" className="demo-btn">
-              Book a Demo Session
+              Get in Touch
               <ArrowRight size={16} />
             </a>
           </motion.div>

@@ -393,14 +393,14 @@ const Header = ({ onRequestDemo }) => {
                   setIsMenuOpen(false);
                 }}
               >
-                REQUEST A DEMO!
+                GET IN TOUCH!
               </button>
             </li>
           </ul>
         </nav>
 
         <div className="header-actions">
-          <button className="demo-btn desktop-demo-btn" onClick={onRequestDemo}>REQUEST A DEMO!</button>
+          <button className="demo-btn desktop-demo-btn" onClick={onRequestDemo}>GET IN TOUCH!</button>
           <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <div className={`hamburger ${isMenuOpen ? 'open' : ''}`}></div>
           </button>

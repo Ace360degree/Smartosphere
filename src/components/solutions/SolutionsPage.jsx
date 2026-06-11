@@ -500,7 +500,7 @@ const SolutionsPage = () => {
               href="/contact"
               className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-all"
             >
-              Request a Solution Demo
+              Get in Touch
             </a>
           </div>
         </div>
