@@ -211,10 +211,10 @@ const CaseStudiesCTA = () => {
 
         {/* Action Buttons */}
         <div className="cta-btn-group">
-          <a href="#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Discuss Your Use Case <ArrowRight size={16} />
           </a>
-          <a href="#engineering" className="btn-outline">
+          <a href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer" className="btn-outline">
             Talk to Our Engineering Team
           </a>
         </div>

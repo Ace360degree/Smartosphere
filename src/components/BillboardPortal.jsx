@@ -425,7 +425,7 @@ const BillboardPortal = () => {
             confidence, Billboard Portal can be configured to fit your network.
           </p>
           <div className="gk-cta-btns">
-            <a href="/contact" className="gk-btn-primary">Talk to Our Engineering Team</a>
+            <a href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer" className="gk-btn-primary">Talk to Our Engineering Team</a>
             <a href="/contact" className="gk-btn-secondary">Request a Billboard Portal Demo</a>
           </div>
           <p className="gk-cta-footer">

@@ -490,7 +490,7 @@ const SolutionsPage = () => {
           </motion.p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/contact"
+              href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 text-primary-foreground font-semibold rounded-lg hover:shadow-[0_0_20px_hsl(350_72%_50%/0.4)] transition-all"
               style={{ background: 'linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))' }}
             >

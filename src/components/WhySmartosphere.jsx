@@ -273,8 +273,8 @@ const WhySmartosphere = () => {
                 engineering requirement, we welcome a technical discussion.
               </p>
               <div className="why-btn-group">
-                <button className="why-btn-primary">Talk to Our Team &rarr;</button>
-                <button className="why-btn-outline">Book a Demo</button>
+                <button onClick={() => window.open('https://wa.me/919820953762', '_blank')} className="why-btn-primary">Talk to Our Team &rarr;</button>
+                <a className="why-btn-outline" href="/contact">Get in Touch</a>
               </div>
             </div>
           </div>

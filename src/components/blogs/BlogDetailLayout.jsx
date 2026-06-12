@@ -352,7 +352,7 @@ const BlogDetailLayout = ({ data }) => {
 
               {/* CTA */}
               <div className="bd-cta">
-                <a href="/contact" className="bd-cta-btn">
+                <a href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer" className="bd-cta-btn">
                   Talk to Our Engineering Team
                   <ArrowRight size={16} />
                 </a>

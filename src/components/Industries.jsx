@@ -495,7 +495,7 @@ const Industries = () => {
               <a href="/contact" className="cta-btn-primary">
                 Discuss Your Industry Use Case
               </a>
-              <a href="#contact" className="cta-btn-secondary">
+              <a href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer" className="cta-btn-secondary">
                 Talk to Our Engineering Team
               </a>
             </div>

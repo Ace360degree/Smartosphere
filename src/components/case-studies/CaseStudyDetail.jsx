@@ -487,7 +487,7 @@ const CaseStudyDetail = ({ data }) => {
                 <polyline points="12 5 19 12 12 19" />
               </svg>
             </a>
-            <a href="/contact" className="cs-detail-btn-secondary">Talk to Our Engineering Team</a>
+            <a href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer" className="cs-detail-btn-secondary">Talk to Our Engineering Team</a>
           </div>
           <p className="cs-detail-tagline">{data.tagline}</p>
         </div>

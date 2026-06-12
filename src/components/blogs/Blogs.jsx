@@ -611,7 +611,7 @@ const Blogs = () => {
                   exploring a particular use case or technical problem and don't see it covered yet,
                   feel free to reach out.
                 </p>
-                <a href="/contact" className="cta-btn-primary">
+                <a href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer" className="cta-btn-primary">
                   Talk to Our Engineering Team
                   <ArrowRight />
                 </a>

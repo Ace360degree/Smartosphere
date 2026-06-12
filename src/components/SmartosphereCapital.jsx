@@ -527,7 +527,7 @@ const SmartosphereCapital = () => {
               Innovation is built when funding matches capability.
             </p>
             <a
-              href="/contact"
+              href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer"
               className="mt-12 group inline-flex items-center gap-2 px-8 py-4 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_35px_hsl(350_72%_50%/0.5)]"
               style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
             >

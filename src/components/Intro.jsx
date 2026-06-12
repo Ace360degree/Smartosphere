@@ -167,7 +167,7 @@ const Intro = () => {
                 deploys electronic and software systems. We work across hardware, firmware, and
                 cloud platforms — all unified to deliver systems that perform in real operating conditions.
               </p>
-              <a href="#about" className="card-link">Learn More About Us &rarr;</a>
+              <a href="/about-us" className="card-link">Learn More About Us &rarr;</a>
             </div>
             <div className="card-glow"></div>
           </div>
