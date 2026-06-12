@@ -84,7 +84,7 @@ const CaseStudiesCTA = () => {
           border-radius: 6px;
           border: 1px solid transparent;
           cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           text-decoration: none;
         }
 
@@ -116,7 +116,7 @@ const CaseStudiesCTA = () => {
           border-radius: 6px;
           border: 1px solid #DB2442;
           cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           text-decoration: none;
         }
 

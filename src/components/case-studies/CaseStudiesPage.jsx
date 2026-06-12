@@ -295,7 +295,7 @@ const CaseStudiesPage = () => {
           text-align: left;
           position: relative;
           overflow: hidden;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           backdrop-filter: blur(10px);
         }
 
@@ -307,7 +307,7 @@ const CaseStudiesPage = () => {
           width: 5px;
           height: 100%;
           background: linear-gradient(180deg, #DB2442 0%, #EC8209 100%);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .cs-card-expanded:hover {
@@ -418,7 +418,7 @@ const CaseStudiesPage = () => {
           align-items: center;
           justify-content: center;
           color: #9ca3af;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .cs-card-expanded:hover .cs-glass-wrapper {
@@ -503,7 +503,7 @@ const CaseStudiesPage = () => {
               <span className="highlight-orange">Engineered Solutions.</span>
             </h1>
             <p className="cs-hero-desc">
-              At SmartoSphere Solutions LLP, our work is driven by real operational problems faced by organisations across industries. Each case study represents a challenge that required custom engineering, reliable electronics, and intelligent software—not off-the-shelf solutions.
+              At Smartosphere Solutions LLP, our work is driven by real operational problems faced by organisations across industries. Each case study represents a challenge that required custom engineering, reliable electronics, and intelligent software—not off-the-shelf solutions.
             </p>
             <p className="cs-hero-desc">
               Our deployments span diverse environments, from logistics and healthcare to outdoor infrastructure and safety-critical operations.

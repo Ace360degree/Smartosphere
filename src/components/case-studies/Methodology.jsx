@@ -66,7 +66,7 @@ const Methodology = () => {
           border-radius: 12px;
           padding: 40px 30px;
           text-align: center;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(219, 36, 66, 0.1);
           position: relative;
         }

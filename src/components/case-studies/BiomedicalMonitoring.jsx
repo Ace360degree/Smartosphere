@@ -22,7 +22,7 @@ const data = {
   },
   solutionArchitecture: {
     description:
-      "SmartoSphere designed a custom biomedical monitoring system using its BioMed and MHITS platforms.",
+      "Smartosphere designed a custom biomedical monitoring system using its BioMed and MHITS platforms.",
     points: [
       "Biomedical sensors selected based on monitoring requirements",
       "Custom electronic hardware for stable signal acquisition",
@@ -62,11 +62,11 @@ const data = {
     summary:
       "The client gained confidence in monitoring continuity and system reliability, supporting better operational and safety outcomes.",
   },
-  whySmartoSphere:
-    "The client chose SmartoSphere for its ability to deliver a custom-engineered solution rather than a generic monitoring device. The in-house capability to design hardware, firmware, and software as a unified system enabled better adaptability and long-term reliability. SmartoSphere's phased deployment approach and focus on real-world validation further strengthened trust in the solution.",
+  whySmartosphere:
+    "The client chose Smartosphere for its ability to deliver a custom-engineered solution rather than a generic monitoring device. The in-house capability to design hardware, firmware, and software as a unified system enabled better adaptability and long-term reliability. Smartosphere's phased deployment approach and focus on real-world validation further strengthened trust in the solution.",
   relatedSolutions: ["BioMed", "MHITS"],
   tagline:
-    "SmartoSphere Solutions LLP — Engineering Reliable Monitoring for Biomedical Environments.",
+    "Smartosphere Solutions LLP — Engineering Reliable Monitoring for Biomedical Environments.",
 };
 
 const BiomedicalMonitoring = () => (

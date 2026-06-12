@@ -345,7 +345,7 @@ const LookingAhead = () => {
           border-radius: 8px;
           border: none;
           cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           text-decoration: none;
           box-shadow: 0 4px 15px rgba(219, 36, 66, 0.25);
         }
@@ -420,7 +420,7 @@ const LookingAhead = () => {
         <div className="looking-ahead-desc-container">
           <p className="looking-ahead-paragraph">
             As technology continues to evolve, the complexity of real-world deployments will only increase.
-            SmartoSphere remains focused on building solutions that meet this complexity with thoughtful
+            Smartosphere remains focused on building solutions that meet this complexity with thoughtful
             engineering, adaptability, and reliability.
           </p>
           <p className="looking-ahead-paragraph">

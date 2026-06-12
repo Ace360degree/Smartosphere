@@ -2,7 +2,7 @@ import React from "react";
 import LegalPageLayout from "./LegalPageLayout";
 
 const contact = {
-  company: "SmartoSphere Solutions LLP",
+  company: "Smartosphere Solutions LLP",
   email: "boa@smartospheresolutions.com",
   website: "https://smartospheresolutions.com",
 };
@@ -78,9 +78,9 @@ const sections = [
 const PrivacyPolicy = () => (
   <LegalPageLayout
     title="Privacy Policy"
-    intro="SmartoSphere Solutions LLP ('SmartoSphere', 'we', 'our', or 'us') is committed to protecting the privacy of visitors, customers, and partners who interact with our website and services. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you visit our website or communicate with us. By accessing or using our website, you agree to the practices described in this Privacy Policy."
+    intro="Smartosphere Solutions LLP ('Smartosphere', 'we', 'our', or 'us') is committed to protecting the privacy of visitors, customers, and partners who interact with our website and services. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you visit our website or communicate with us. By accessing or using our website, you agree to the practices described in this Privacy Policy."
     sections={sections}
-    closingNote="SmartoSphere Solutions LLP — Respecting Privacy Through Responsible Engineering."
+    closingNote="Smartosphere Solutions LLP — Respecting Privacy Through Responsible Engineering."
     contact={contact}
   />
 );

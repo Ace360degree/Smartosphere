@@ -101,7 +101,7 @@ const GeoTracker = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -122,7 +122,7 @@ const GeoTracker = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -319,7 +319,7 @@ const GeoTracker = () => {
           <p className="gk-hero-subtitle">Real-Time Tracking &amp; Monitoring Intelligence</p>
 
           <p className="gk-hero-desc">
-            GeoTracker is SmartoSphere's advanced tracking solution designed to provide reliable, real-time
+            GeoTracker is Smartosphere's advanced tracking solution designed to provide reliable, real-time
             visibility of vehicles, assets, and people. Built as an integrated system that combines intelligent
             hardware with cloud-based software, GeoTracker enables organisations to monitor movement,
             conditions, and compliance with confidence. Engineered for real-world operating environments,
@@ -468,7 +468,7 @@ const GeoTracker = () => {
       {/* ── Why SmartSphere ── */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why GeoTracker by SmartSphere</h2>
+          <h2 className="gk-h2">Why GeoTracker by Smartsphere</h2>
           <p className="gk-body">
             GeoTracker is designed with a focus on reliability, adaptability, and long-term usability. Because the
             hardware, firmware, and software are developed as a unified system, the solution can be customised to meet
@@ -503,7 +503,7 @@ const GeoTracker = () => {
             <a href="/contact" className="gk-btn-secondary">Request a GeoTracker Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartSphere Solutions LLP — Engineering Intelligence That Delivers Control.
+            Smartosphere Solutions LLP — Engineering Intelligence That Delivers Control.
           </p>
         </div>
       </div>

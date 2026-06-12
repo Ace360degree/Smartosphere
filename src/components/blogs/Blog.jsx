@@ -171,7 +171,7 @@ const Blog = () => {
           display: flex;
           align-items: center;
           gap: 8px;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           text-decoration: none;
           white-space: nowrap;
           border-bottom: 1px solid transparent;
@@ -196,7 +196,7 @@ const Blog = () => {
           border-radius: 16px;
           padding: 35px 25px;
           border: 1px solid rgba(255, 255, 255, 0.04);
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: transform, opacity, background-color, border-color, color 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           display: flex;
           flex-direction: column;
           align-items: flex-start;

@@ -193,7 +193,7 @@ const Hero = () => {
           font-size: 15px;
           border: none;
           cursor: pointer;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           box-shadow: 0 4px 15px rgba(219, 36, 66, 0.2);
           display: inline-flex;
           align-items: center;
@@ -215,7 +215,7 @@ const Hero = () => {
           font-weight: 600;
           font-size: 15px;
           cursor: pointer;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .btn-outline:hover {

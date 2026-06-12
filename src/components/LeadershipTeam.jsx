@@ -53,7 +53,7 @@ const LeadershipTeam = () => {
 
             <div className="team-desc-content">
               <p className="team-paragraph">
-                SmartoSphere is led by professionals with hands-on experience in electronics design, embedded systems, and software development. Our leadership team remains closely involved in technical decision-making, ensuring that engineering quality is maintained across all projects.
+                Smartosphere is led by professionals with hands-on experience in electronics design, embedded systems, and software development. Our leadership team remains closely involved in technical decision-making, ensuring that engineering quality is maintained across all projects.
               </p>
               <p className="team-paragraph">
                 Our team brings together expertise in hardware design, firmware development, cloud platforms, and system integration. This multidisciplinary structure enables us to approach problems holistically rather than in isolated silos. We work collaboratively, with engineering teams engaging directly with problem statements and deployment realities.

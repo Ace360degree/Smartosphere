@@ -164,7 +164,7 @@ const OurValues = () => {
           align-items: center;
           justify-content: space-between;
           gap: 24px;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           position: relative;
           overflow: hidden;
         }

@@ -54,21 +54,21 @@ export default function VortexCursor({
       // Smooth mouse interpolation
       currentMouse.current.x += (mouseTarget.current.x - currentMouse.current.x) * smoothing;
       currentMouse.current.y += (mouseTarget.current.y - currentMouse.current.y) * smoothing;
-      
+
       const points = pointsRef.current;
-      
+
       // Density control
       points.push({ x: currentMouse.current.x, y: currentMouse.current.y, lifetime: 0 });
-      
+
       const durationInFrames = lineDuration * 60;
       for (let i = 0; i < points.length; i++) {
         points[i].lifetime++;
       }
-      
+
       while (points.length > 0 && points[0].lifetime > durationInFrames) {
         points.shift();
       }
-      
+
       if (points.length > 3) {
         for (let i = 1; i < points.length - 2; i++) {
           const point = points[i];
@@ -77,11 +77,11 @@ export default function VortexCursor({
           const progress = point.lifetime / durationInFrames;
           const dec = 1 - progress;
           const width = lineWidthStart * dec;
-          
+
           context.lineWidth = width;
           context.lineCap = "round";
           context.lineJoin = "round";
-          
+
           // COLOR MODES
           if (colorMode === "Solid") {
             context.strokeStyle = startColor || `rgba(236,130,9,${dec})`;
@@ -102,25 +102,25 @@ export default function VortexCursor({
             const hue = (point.lifetime * 8) % 360;
             context.strokeStyle = `hsla(${hue}, 100%, 60%, ${dec})`;
           }
-          
+
           const mid1X = (point.x + nextPoint.x) / 2;
           const mid1Y = (point.y + nextPoint.y) / 2;
           const mid2X = (nextPoint.x + afterNext.x) / 2;
           const mid2Y = (nextPoint.y + afterNext.y) / 2;
-          
+
           context.beginPath();
           context.moveTo(mid1X, mid1Y);
           context.quadraticCurveTo(nextPoint.x, nextPoint.y, mid2X, mid2Y);
           context.stroke();
-          
+
           // Reset globalAlpha if changed
           if (colorMode === "Gradient") context.globalAlpha = 1.0;
         }
       }
-      
+
       requestRef.current = requestAnimationFrame(draw);
     };
-    
+
     requestRef.current = requestAnimationFrame(draw);
 
     const handleMouseMove = (e) => {

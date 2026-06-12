@@ -22,7 +22,7 @@ const data = {
   },
   solutionArchitecture: {
     description:
-      'SmartoSphere implemented a two-layer solution combining on-site intelligence and centralised software management.',
+      'Smartosphere implemented a two-layer solution combining on-site intelligence and centralised software management.',
     points: [
       'Billboard Controls installed at each location to manage and monitor display hardware',
       'Embedded electronics and firmware for reliable device-level operation',
@@ -61,11 +61,11 @@ const data = {
     summary:
       'The client gained a unified view of the entire network, enabling more proactive and efficient management.',
   },
-  whySmartoSphere:
-    'SmartoSphere was selected for its ability to deliver both hardware and software as a unified solution. The integrated approach allowed the client to avoid multiple vendors and ensured seamless coordination between on-site controls and centralised monitoring.',
+  whySmartosphere:
+    'Smartosphere was selected for its ability to deliver both hardware and software as a unified solution. The integrated approach allowed the client to avoid multiple vendors and ensured seamless coordination between on-site controls and centralised monitoring.',
   relatedSolutions: ['Billboard Controls', 'Billboard Portal'],
   tagline:
-    'SmartoSphere Solutions LLP — Intelligent Management for Distributed Billboard Networks.',
+    'Smartosphere Solutions LLP — Intelligent Management for Distributed Billboard Networks.',
 };
 
 const BillboardNetworkManagement = () => (

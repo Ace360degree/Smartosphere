@@ -91,7 +91,7 @@ const MFlash = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -112,7 +112,7 @@ const MFlash = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -304,7 +304,7 @@ const MFlash = () => {
           <p className="gk-hero-subtitle">Industrial Data &amp; Automation Control Electronics</p>
 
           <p className="gk-hero-desc">
-            mFlash is SmartoSphere's industrial electronics solution designed for high-speed data handling,
+            mFlash is Smartosphere's industrial electronics solution designed for high-speed data handling,
             signal processing, and automation control in demanding operational environments. Built with a
             focus on reliability and precision, mFlash enables stable data flow and control logic execution
             where performance consistency is critical. The solution combines robust hardware design,
@@ -435,13 +435,13 @@ const MFlash = () => {
         </div>
       </div>
 
-      {/* Why mFlash by SmartoSphere */}
+      {/* Why mFlash by Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why mFlash by SmartoSphere</h2>
+          <h2 className="gk-h2">Why mFlash by Smartosphere</h2>
           <p className="gk-body">
             mFlash is engineered with a focus on flexibility, reliability, and long-term support. By designing both the
-            hardware and firmware in-house, SmartoSphere ensures tight integration and the ability to customise the
+            hardware and firmware in-house, Smartosphere ensures tight integration and the ability to customise the
             solution to match exact operational needs. This makes mFlash a strong choice for industrial applications
             where standard controllers fall short.
           </p>
@@ -472,7 +472,7 @@ const MFlash = () => {
             <a href="/contact" className="gk-btn-secondary">Request an mFlash Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartSphere Solutions LLP — Precision Electronics for Industrial Control.
+            Smartosphere Solutions LLP — Precision Electronics for Industrial Control.
           </p>
         </div>
       </div>

@@ -97,7 +97,7 @@ const DeploymentSolutions = () => {
           display: flex;
           align-items: center;
           gap: 16px;
-          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
           height: 100%;
         }
 
@@ -119,7 +119,7 @@ const DeploymentSolutions = () => {
           border: 1px solid rgba(236, 130, 9, 0.2);
           color: #EC8209;
           flex-shrink: 0;
-          transition: all 0.4s ease;
+          transition: transform, opacity, background-color, border-color, color 0.4s ease;
         }
 
         .capability-card:hover .capability-icon-container {
@@ -180,7 +180,7 @@ const DeploymentSolutions = () => {
           align-items: center;
           justify-content: center;
           text-align: center;
-          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
           height: 100%;
         }
 

@@ -127,7 +127,7 @@ const InnovationEcosystem = () => {
             >
               <a
                 href="/contact"
-                className="group inline-flex justify-center items-center gap-2 px-7 py-3.5 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_30px_hsl(350_72%_50%/0.45)]"
+                className="group inline-flex justify-center items-center gap-2 px-7 py-3.5 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition hover:shadow-[0_0_30px_hsl(350_72%_50%/0.45)]"
                 style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
               >
                 Start a Conversation
@@ -221,7 +221,7 @@ const InnovationEcosystem = () => {
                 key={p.name}
                 initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="group relative rounded-2xl p-6 md:p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition-all overflow-hidden"
+                className="group relative rounded-2xl p-6 md:p-8 border border-border bg-surface-elevated/60 backdrop-blur-sm hover:border-accent/50 transition overflow-hidden"
               >
                 <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-3xl"
                   style={{ background: "radial-gradient(circle, hsl(350 72% 40%) 0%, transparent 70%)" }} />
@@ -327,7 +327,7 @@ const InnovationEcosystem = () => {
                 key={a.label}
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="group flex flex-col sm:flex-row items-start sm:items-center lg:items-start gap-4 p-5 md:p-6 rounded-xl border border-border bg-surface-elevated/40 hover:bg-surface-elevated hover:border-accent/40 transition-all"
+                className="group flex flex-col sm:flex-row items-start sm:items-center lg:items-start gap-4 p-5 md:p-6 rounded-xl border border-border bg-surface-elevated/40 hover:bg-surface-elevated hover:border-accent/40 transition"
               >
                 <div className="shrink-0 w-11 h-11 rounded-lg flex items-center justify-center border border-accent/30 bg-background/60"
                   style={{ boxShadow: "0 0 18px hsl(32 93% 48% / 0.2)" }}>
@@ -367,7 +367,7 @@ const InnovationEcosystem = () => {
             </p>
             <a
               href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer"
-              className="mt-10 md:mt-12 group inline-flex justify-center items-center gap-2 px-6 md:px-8 py-3.5 md:py-4 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition-all hover:shadow-[0_0_35px_hsl(350_72%_50%/0.5)]"
+              className="mt-10 md:mt-12 group inline-flex justify-center items-center gap-2 px-6 md:px-8 py-3.5 md:py-4 rounded-lg text-primary-foreground text-sm font-semibold tracking-wide transition hover:shadow-[0_0_35px_hsl(350_72%_50%/0.5)]"
               style={{ background: "linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))" }}
             >
               Talk to the Smartosphere Team

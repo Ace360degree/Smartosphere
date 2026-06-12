@@ -268,7 +268,7 @@ const OurJourney = () => {
 
         <div className="journey-content">
           <p className="journey-paragraph">
-            SmartoSphere Solutions LLP was formed with a clear objective: to bridge the gap between conceptual technology and deployable systems. Early projects highlighted a recurring pattern—solutions that looked capable during demonstrations often failed once exposed to real-world conditions.
+            Smartosphere Solutions LLP was formed with a clear objective: to bridge the gap between conceptual technology and deployable systems. Early projects highlighted a recurring pattern—solutions that looked capable during demonstrations often failed once exposed to real-world conditions.
           </p>
           <p className="journey-paragraph">
             This insight shaped our approach. Over time, we evolved from solving isolated problems to building structured platforms across tracking, biomedical monitoring, industrial control, and infrastructure management. Each project added to our understanding of how systems behave over extended use, in varied environments, and under operational constraints.

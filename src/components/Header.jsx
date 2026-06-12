@@ -129,7 +129,7 @@ const Header = ({ onRequestDemo }) => {
           opacity: 0;
           visibility: hidden;
           transform: translateY(10px);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
           z-index: 1001;
         }
@@ -152,7 +152,7 @@ const Header = ({ onRequestDemo }) => {
           color: var(--text-secondary);
           font-size: 0.9rem;
           font-weight: 500;
-          transition: all 0.2s ease;
+          transition: transform, opacity, background-color, border-color, color 0.2s ease;
         }
 
         .dropdown-item a:hover {
@@ -191,7 +191,7 @@ const Header = ({ onRequestDemo }) => {
           height: 2px;
           background-color: white;
           position: relative;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .hamburger::before,
@@ -201,7 +201,7 @@ const Header = ({ onRequestDemo }) => {
           width: 100%;
           height: 100%;
           background-color: white;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .hamburger::before {

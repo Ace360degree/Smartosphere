@@ -101,7 +101,7 @@ const GokartServomotor = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -122,7 +122,7 @@ const GokartServomotor = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -335,7 +335,7 @@ const GokartServomotor = () => {
           <p className="gk-hero-subtitle">Precision Electronic Control for GoKart &amp; Track Applications</p>
 
           <p className="gk-hero-desc">
-            GoKart Servomotor is SmartSphere's specialised electronic control solution designed for
+            GoKart Servomotor is Smartosphere's specialised electronic control solution designed for
             precision servomotor management in GoKart tracks and controlled racing environments. The
             system enables accurate speed regulation, smooth motor response, and dependable electronic
             control—ensuring consistent performance and enhanced safety. Engineered for reliability and
@@ -464,13 +464,13 @@ const GokartServomotor = () => {
         </div>
       </div>
 
-      {/* ── Why SmartSphere ── */}
+      {/* ── Why Smartosphere ── */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why GoKart Servomotor by SmartSphere</h2>
+          <h2 className="gk-h2">Why GoKart Servomotor by Smartosphere</h2>
           <p className="gk-body">
             GoKart Servomotor is engineered with a focus on accuracy, reliability, and adaptability. By developing
-            the electronics and firmware as a unified system, SmartSphere ensures the solution can be customised to
+            the electronics and firmware as a unified system, Smartosphere ensures the solution can be customised to
             match specific track requirements and operational goals. This makes the system suitable for both standard
             track setups and specialised configurations.
           </p>
@@ -501,7 +501,7 @@ const GokartServomotor = () => {
             <a href="/contact" className="gk-btn-secondary">Request a GoKart Servomotor Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartSphere Solutions LLP — Precision Control for Performance-Driven Environments.
+            Smartosphere Solutions LLP — Precision Control for Performance-Driven Environments.
           </p>
         </div>
       </div>

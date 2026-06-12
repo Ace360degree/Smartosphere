@@ -80,7 +80,7 @@ const BillboardPortal = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -100,7 +100,7 @@ const BillboardPortal = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -259,7 +259,7 @@ const BillboardPortal = () => {
           <p className="gk-hero-subtitle">Centralised Cloud Platform for Billboard Network Management</p>
 
           <p className="gk-hero-desc">
-            Billboard Portal is SmartoSphere's cloud-based software platform designed to provide centralised visibility,
+            Billboard Portal is Smartosphere's cloud-based software platform designed to provide centralised visibility,
             control, and operational insight across single or multi-location billboard networks. While Billboard Controls
             manages on-site hardware, Billboard Portal acts as the command centre, bringing data from all connected
             billboards into one unified interface. The platform enables operators to monitor performance, track uptime,
@@ -391,10 +391,10 @@ const BillboardPortal = () => {
         </div>
       </div>
 
-      {/* Why SmartoSphere */}
+      {/* Why Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why Billboard Portal by SmartoSphere</h2>
+          <h2 className="gk-h2">Why Billboard Portal by Smartosphere</h2>
           <p className="gk-body">
             Billboard Portal is designed with a focus on clarity, scalability, and operational efficiency.
             By providing a single source of truth for billboard networks, it helps organisations reduce
@@ -429,7 +429,7 @@ const BillboardPortal = () => {
             <a href="/contact" className="gk-btn-secondary">Request a Billboard Portal Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartoSphere Solutions LLP — Centralised Intelligence for Connected Display Networks.
+            Smartosphere Solutions LLP — Centralised Intelligence for Connected Display Networks.
           </p>
         </div>
       </div>

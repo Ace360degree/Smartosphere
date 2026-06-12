@@ -22,7 +22,7 @@ const data = {
   },
   solutionArchitecture: {
     description:
-      "SmartoSphere implemented a precision electronic motor control system using its GoKart Servomotor solution.",
+      "Smartosphere implemented a precision electronic motor control system using its GoKart Servomotor solution.",
     points: [
       "Dedicated servomotor control electronics for each kart",
       "Embedded firmware to manage motor response and speed regulation",
@@ -60,11 +60,11 @@ const data = {
     summary:
       "The client achieved a more predictable and controlled racing environment, improving overall operational confidence.",
   },
-  whySmartoSphere:
-    "SmartoSphere was selected for its ability to engineer a custom electronic control solution rather than adapting generic controllers. The in-house development of both hardware and firmware allowed the system to be tuned precisely to the track's operational needs. The focus on real-world testing and reliability ensured a solution suitable for continuous use.",
+  whySmartosphere:
+    "Smartosphere was selected for its ability to engineer a custom electronic control solution rather than adapting generic controllers. The in-house development of both hardware and firmware allowed the system to be tuned precisely to the track's operational needs. The focus on real-world testing and reliability ensured a solution suitable for continuous use.",
   relatedSolutions: ["GoKart Servomotor"],
   tagline:
-    "SmartoSphere Solutions LLP — Precision Control for Safe and Consistent Track Operations.",
+    "Smartosphere Solutions LLP — Precision Control for Safe and Consistent Track Operations.",
 };
 
 const GoKartTrackControl = () => (

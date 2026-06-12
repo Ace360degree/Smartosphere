@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { User, Mail, Phone, Globe, FileText, X, Send, CheckCircle2, AlertCircle } from "lucide-react";
+import Swal from 'sweetalert2';
 
 const RequestDemoModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -24,16 +25,14 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
     setErrorMessage("");
 
     try {
-      const url = window.location.hostname === "localhost"
-        ? "http://localhost/Smartosphere/admin/demo_submit.php"
-        : "/admin/demo_submit.php";
+      const url = "/api/submit";
 
       const response = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ formSource: 'Demo Request Form', ...formData }),
       });
 
       const data = await response.json();
@@ -47,14 +46,32 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
           website: "",
           requirements: "",
         });
+        Swal.fire({
+          title: 'Success!',
+          text: 'Your demo request has been successfully submitted.',
+          icon: 'success',
+          confirmButtonColor: '#EC8209'
+        });
       } else {
         setStatus("error");
         setErrorMessage(data.error || "Something went wrong. Please try again.");
+        Swal.fire({
+          title: 'Error',
+          text: data.error || 'Something went wrong. Please try again.',
+          icon: 'error',
+          confirmButtonColor: '#EC8209'
+        });
       }
     } catch (err) {
       console.error("Error submitting demo request:", err);
       setStatus("error");
       setErrorMessage("Network error. Please check your connection and try again.");
+      Swal.fire({
+        title: 'Error',
+        text: 'Network error. Please check your connection and try again.',
+        icon: 'error',
+        confirmButtonColor: '#EC8209'
+      });
     }
   };
 
@@ -138,7 +155,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
               display: flex;
               align-items: center;
               justify-content: center;
-              transition: all 0.2s ease;
+              transition: transform, opacity, background-color, border-color, color 0.2s ease;
             }
 
             .demo-modal-close-btn:hover {
@@ -180,7 +197,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
               border-radius: 12px;
               padding: 12px 16px;
               gap: 12px;
-              transition: all 0.3s ease;
+              transition: transform, opacity, background-color, border-color, color 0.3s ease;
             }
 
             .demo-input-container:focus-within {
@@ -252,7 +269,7 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
               align-items: center;
               justify-content: center;
               gap: 8px;
-              transition: all 0.3s ease;
+              transition: transform, opacity, background-color, border-color, color 0.3s ease;
               box-shadow: 0 4px 20px rgba(236, 130, 9, 0.15);
               margin-top: 10px;
             }

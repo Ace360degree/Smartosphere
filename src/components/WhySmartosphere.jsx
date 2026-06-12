@@ -151,7 +151,7 @@ const WhySmartosphere = () => {
           font-size: 15px;
           border: none;
           cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
           display: inline-flex;
           align-items: center;
           gap: 6px;
@@ -173,7 +173,7 @@ const WhySmartosphere = () => {
           font-size: 15px;
           border: 1px solid rgba(255, 255, 255, 0.1);
           cursor: pointer;
-          transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
           display: inline-flex;
           align-items: center;
           justify-content: center;
@@ -281,7 +281,7 @@ const WhySmartosphere = () => {
         </div>
 
         <div className="why-footer-signature">
-          <span className="brand">SmartoSphere Solutions LLP — </span>
+          <span className="brand">Smartosphere Solutions LLP — </span>
           <span className="slogan">Engineering Systems That Perform Where It Matters.</span>
         </div>
       </div>

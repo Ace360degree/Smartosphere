@@ -150,7 +150,7 @@ const BlogDetailLayout = ({ data }) => {
           color: #9ca3af;
           text-decoration: none;
           margin-bottom: 36px;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
 
         .bd-back-btn:hover {
@@ -275,7 +275,7 @@ const BlogDetailLayout = ({ data }) => {
           background: linear-gradient(135deg, #DB2442, #EC8209);
           color: #ffffff;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 15px rgba(219, 36, 66, 0.25);
         }
 

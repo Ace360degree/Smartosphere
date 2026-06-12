@@ -80,7 +80,7 @@ const BioMed = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -100,7 +100,7 @@ const BioMed = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -258,7 +258,7 @@ const BioMed = () => {
           <p className="gk-hero-subtitle">Biomedical Monitoring &amp; Electronic Systems</p>
 
           <p className="gk-hero-desc">
-            BioMed is SmartoSphere's specialised biomedical solution focused on the design and deployment of custom
+            BioMed is Smartosphere's specialised biomedical solution focused on the design and deployment of custom
             electronic systems for health monitoring, diagnostics, and medical data acquisition. Built as an integrated
             ecosystem of biomedical-grade hardware, embedded intelligence, and secure software, BioMed enables
             reliable monitoring in clinical, research, and controlled environments. The solution is engineered for
@@ -392,13 +392,13 @@ const BioMed = () => {
         </div>
       </div>
 
-      {/* Why SmartoSphere */}
+      {/* Why Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why BioMed by SmartoSphere</h2>
+          <h2 className="gk-h2">Why BioMed by Smartosphere</h2>
           <p className="gk-body">
             BioMed is engineered with a focus on precision, adaptability, and long-term usability. By developing
-            the complete system in-house—hardware, firmware, and software—SmartoSphere ensures tight integration,
+            the complete system in-house—hardware, firmware, and software—Smartosphere ensures tight integration,
             higher reliability, and the ability to customise solutions for specific biomedical requirements.
             This approach makes BioMed suitable for both standard monitoring needs and specialised applications.
           </p>
@@ -430,7 +430,7 @@ const BioMed = () => {
             <a href="/contact" className="gk-btn-secondary">Request a BioMed Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartoSphere Solutions LLP — Engineering Precision for Biomedical Intelligence.
+            Smartosphere Solutions LLP — Engineering Precision for Biomedical Intelligence.
           </p>
         </div>
       </div>

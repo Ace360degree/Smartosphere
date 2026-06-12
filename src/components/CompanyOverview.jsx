@@ -79,7 +79,7 @@ const CompanyOverview = () => {
           display: flex;
           align-items: center;
           gap: 16px;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           cursor: pointer;
         }
 
@@ -140,7 +140,7 @@ const CompanyOverview = () => {
             Technology Must Adapt to <span className="highlight-glow">the Environment</span>
           </h2>
           <p className="about-overview-para">
-            At SmartoSphere, we believe that technology must adapt to the environment it operates in—not the other way around. Many real-world challenges arise not from a lack of technology, but from solutions that fail to account for operational realities such as continuous operation, unreliable connectivity, environmental stress, and human interaction.
+            At Smartosphere, we believe that technology must adapt to the environment it operates in—not the other way around. Many real-world challenges arise not from a lack of technology, but from solutions that fail to account for operational realities such as continuous operation, unreliable connectivity, environmental stress, and human interaction.
           </p>
           <p className="about-overview-para">
             We address these challenges by engineering end-to-end systems, where hardware, firmware, and software are developed as a unified whole. This approach allows us to deliver solutions that are adaptable, scalable, and suitable for deployment in complex environments.

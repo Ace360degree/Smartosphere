@@ -79,7 +79,7 @@ const RadiationElectronics = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -99,7 +99,7 @@ const RadiationElectronics = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -264,7 +264,7 @@ const RadiationElectronics = () => {
           <p className="gk-hero-subtitle">Specialised Electronic Systems for Radiation Measurement &amp; Safety</p>
 
           <p className="gk-hero-desc">
-            Radiation Electronics is SmartoSphere's specialised solution for radiation detection, measurement, and safety
+            Radiation Electronics is Smartosphere's specialised solution for radiation detection, measurement, and safety
             monitoring. The system combines precision electronic hardware with embedded intelligence and secure data
             handling to deliver reliable radiation monitoring in research, industrial, and regulated environments.
             Engineered for accuracy and stability, the solution supports continuous monitoring where safety and
@@ -384,13 +384,13 @@ const RadiationElectronics = () => {
         </div>
       </div>
 
-      {/* Why SmartoSphere */}
+      {/* Why Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why Radiation Electronics by SmartoSphere</h2>
+          <h2 className="gk-h2">Why Radiation Electronics by Smartosphere</h2>
           <p className="gk-body">
             Radiation Electronics is developed with a focus on precision, reliability, and safety. By engineering the
-            complete system in-house, SmartoSphere ensures tight integration between hardware, firmware, and software,
+            complete system in-house, Smartosphere ensures tight integration between hardware, firmware, and software,
             enabling customisation for specific monitoring requirements and regulatory standards.
           </p>
         </div>
@@ -420,7 +420,7 @@ const RadiationElectronics = () => {
             <a href="/contact" className="gk-btn-secondary">Request a Radiation Electronics Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartoSphere Solutions LLP — Precision Electronics for Radiation Safety.
+            Smartosphere Solutions LLP — Precision Electronics for Radiation Safety.
           </p>
         </div>
       </div>

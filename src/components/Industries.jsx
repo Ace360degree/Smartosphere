@@ -19,7 +19,7 @@ const industries = [
     icon: Truck,
     title: 'Logistics & Transportation',
     description:
-      'In logistics and transportation, visibility and control directly impact efficiency and cost. SmartoSphere solutions support real-time tracking, condition monitoring, and operational oversight across fleets and assets.',
+      'In logistics and transportation, visibility and control directly impact efficiency and cost. Smartosphere solutions support real-time tracking, condition monitoring, and operational oversight across fleets and assets.',
     detail:
       'Our systems enable organisations to monitor vehicle movement, enforce route compliance, track environmental conditions such as temperature, and respond quickly to exceptions. These capabilities are especially valuable in fleet operations, cold-chain logistics, and asset-heavy transport networks.',
     solutions: ['GeoTracker', 'MHITS (where human monitoring is required)'],
@@ -28,7 +28,7 @@ const industries = [
     icon: HeartPulse,
     title: 'Healthcare & Biomedical',
     description:
-      'Healthcare and biomedical environments require accurate, continuous, and secure monitoring. SmartoSphere develops biomedical electronics and monitoring systems that support reliable data acquisition and real-time visibility.',
+      'Healthcare and biomedical environments require accurate, continuous, and secure monitoring. Smartosphere develops biomedical electronics and monitoring systems that support reliable data acquisition and real-time visibility.',
     detail:
       'Our solutions are designed to integrate into clinical, research, and controlled healthcare settings, supporting better observation, faster response, and structured data analysis while maintaining system stability and adaptability.',
     solutions: ['BioMed', 'MHITS'],
@@ -37,7 +37,7 @@ const industries = [
     icon: Factory,
     title: 'Industrial Automation & Manufacturing',
     description:
-      'Industrial operations demand electronics that can perform reliably under continuous load and challenging conditions. SmartoSphere solutions support automation, control, and data handling in manufacturing and industrial environments.',
+      'Industrial operations demand electronics that can perform reliably under continuous load and challenging conditions. Smartosphere solutions support automation, control, and data handling in manufacturing and industrial environments.',
     detail:
       'By combining robust hardware with embedded intelligence, our systems enable precise control, predictable behaviour, and seamless integration into existing automation workflows.',
     solutions: ['mFlash', 'Laplok'],
@@ -46,7 +46,7 @@ const industries = [
     icon: MonitorPlay,
     title: 'Outdoor Media & Advertising',
     description:
-      'Managing outdoor and digital advertising infrastructure requires dependable control and centralised visibility. SmartoSphere solutions help media operators maintain consistent performance across billboard networks while reducing manual intervention.',
+      'Managing outdoor and digital advertising infrastructure requires dependable control and centralised visibility. Smartosphere solutions help media operators maintain consistent performance across billboard networks while reducing manual intervention.',
     detail:
       'Our systems enable on-site control of display hardware as well as centralised monitoring and analysis across multiple locations.',
     solutions: ['Billboard Controls', 'Billboard Portal'],
@@ -55,7 +55,7 @@ const industries = [
     icon: ShieldCheck,
     title: 'Infrastructure, Mining & Safety-Critical Operations',
     description:
-      'In infrastructure-heavy and safety-critical environments, reliable monitoring and control are essential. SmartoSphere solutions support visibility, condition monitoring, and safety oversight in environments where manual supervision is impractical or insufficient.',
+      'In infrastructure-heavy and safety-critical environments, reliable monitoring and control are essential. Smartosphere solutions support visibility, condition monitoring, and safety oversight in environments where manual supervision is impractical or insufficient.',
     detail:
       'These solutions help organisations manage risk, maintain compliance, and respond proactively to abnormal conditions.',
     solutions: ['GeoTracker', 'Laplok', 'Radiation Electronics'],
@@ -64,7 +64,7 @@ const industries = [
     icon: Landmark,
     title: 'Government & Regulated Environments',
     description:
-      'Government and regulated sectors require systems that are dependable, auditable, and adaptable to compliance needs. SmartoSphere develops solutions that support monitoring, reporting, and operational oversight while aligning with regulatory expectations.',
+      'Government and regulated sectors require systems that are dependable, auditable, and adaptable to compliance needs. Smartosphere develops solutions that support monitoring, reporting, and operational oversight while aligning with regulatory expectations.',
     detail:
       'Our approach focuses on data integrity, system reliability, and long-term usability.',
     solutions: ['GeoTracker', 'MHITS', 'Radiation Electronics'],
@@ -73,7 +73,7 @@ const industries = [
     icon: FlaskConical,
     title: 'Research, Education & R&D',
     description:
-      'Research institutions and academic environments often require custom electronics and monitoring systems tailored to specific experiments or projects. SmartoSphere supports these environments by designing adaptable, scalable solutions that evolve with research needs.',
+      'Research institutions and academic environments often require custom electronics and monitoring systems tailored to specific experiments or projects. Smartosphere supports these environments by designing adaptable, scalable solutions that evolve with research needs.',
     detail:
       'Our systems are suitable for pilot studies, long-term research programs, and experimental deployments.',
     solutions: ['BioMed', 'mFlash', 'Radiation Electronics'],
@@ -82,7 +82,7 @@ const industries = [
     icon: Car,
     title: 'Motorsport & Recreational Facilities',
     description:
-      'In controlled motorsport and recreational environments, precision control and safety are essential. SmartoSphere solutions support reliable electronic control systems that enable consistent performance and predictable behaviour.',
+      'In controlled motorsport and recreational environments, precision control and safety are essential. Smartosphere solutions support reliable electronic control systems that enable consistent performance and predictable behaviour.',
     detail:
       'These systems are designed to enhance safety, improve operational consistency, and support configurable control requirements.',
     solutions: ['GoKart Servomotor'],
@@ -429,7 +429,7 @@ const Industries = () => {
               <span className="ind-eyebrow">Industries We Serve</span>
               <h1>Engineering Solutions Across Diverse Operating Environments</h1>
               <p>
-                SmartoSphere Solutions works across multiple industries where reliability, precision,
+                Smartosphere Solutions works across multiple industries where reliability, precision,
                 and real-time intelligence are essential. We design and deploy purpose-built
                 electronic and software solutions that adapt to the operational realities of each
                 industry.
@@ -460,7 +460,7 @@ const Industries = () => {
               className="ind-approach-inner"
             >
               <h2>Our Industry Approach</h2>
-              <p>Across all industries, SmartoSphere follows a consistent approach:</p>
+              <p>Across all industries, Smartosphere follows a consistent approach:</p>
               <div className="approach-grid">
                 {approachItems.map((item, i) => (
                   <motion.div
@@ -488,7 +488,7 @@ const Industries = () => {
           <div className="container">
             <h2>Let's Talk</h2>
             <p>
-              If your industry faces unique operational or monitoring challenges, SmartoSphere can
+              If your industry faces unique operational or monitoring challenges, Smartosphere can
               engineer a solution tailored to your requirements.
             </p>
             <div className="ind-cta-btns">

@@ -91,7 +91,7 @@ const MHITS = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -112,7 +112,7 @@ const MHITS = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -305,7 +305,7 @@ const MHITS = () => {
           <p className="gk-hero-subtitle">Medical &amp; Human Intelligence Tracking System</p>
 
           <p className="gk-hero-desc">
-            MHITS is SmartoSphere's specialised monitoring solution designed to track human health
+            MHITS is Smartosphere's specialised monitoring solution designed to track human health
             parameters and condition-based intelligence in environments where continuous visibility and
             timely alerts are critical. Built as an integrated ecosystem of hardware, sensors, firmware, and
             cloud software, MHITS enables organisations to monitor, analyse, and respond to health-related
@@ -440,10 +440,10 @@ const MHITS = () => {
         </div>
       </div>
 
-      {/* Why MHITS by SmartoSphere */}
+      {/* Why MHITS by Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why MHITS by SmartSphere</h2>
+          <h2 className="gk-h2">Why MHITS by Smartosphere</h2>
           <p className="gk-body">
             MHITS is engineered with a focus on adaptability, reliability, and long-term usability. Because the complete
             system—hardware, firmware, and software—is developed as a unified platform, MHITS can be tailored to
@@ -478,7 +478,7 @@ const MHITS = () => {
             <a href="/contact" className="gk-btn-secondary">Request an MHITS Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartSphere Solutions LLP — Intelligent Monitoring Built for Real-World Environments.
+            Smartosphere Solutions LLP — Intelligent Monitoring Built for Real-World Environments.
           </p>
         </div>
       </div>

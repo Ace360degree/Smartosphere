@@ -79,7 +79,7 @@ const Laplok = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -99,7 +99,7 @@ const Laplok = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -256,7 +256,7 @@ const Laplok = () => {
           <p className="gk-hero-subtitle">Smart Electronic Locking &amp; Asset Safety System</p>
 
           <p className="gk-hero-desc">
-            Laplok is SmartoSphere's intelligent electronic locking solution designed to enhance asset
+            Laplok is Smartosphere's intelligent electronic locking solution designed to enhance asset
             security, access control, and operational safety in industrial and controlled environments. By
             combining secure hardware with embedded intelligence, Laplok enables organisations to move
             beyond mechanical locks to trackable, auditable, and remotely managed locking systems. The
@@ -385,13 +385,13 @@ const Laplok = () => {
         </div>
       </div>
 
-      {/* Why Laplok by SmartoSphere */}
+      {/* Why Laplok by Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why Laplok by SmartoSphere</h2>
+          <h2 className="gk-h2">Why Laplok by Smartosphere</h2>
           <p className="gk-body">
             Laplok is designed with a focus on reliability, accountability, and adaptability. By engineering both the
-            hardware and control logic in-house, SmartoSphere ensures that Laplok can be customised to meet specific
+            hardware and control logic in-house, Smartosphere ensures that Laplok can be customised to meet specific
             operational workflows and safety requirements. This makes Laplok suitable for both standalone applications
             and large-scale deployments.
           </p>
@@ -422,7 +422,7 @@ const Laplok = () => {
             <a href="/contact" className="gk-btn-secondary">Request a Laplok Overview</a>
           </div>
           <p className="gk-cta-footer">
-            SmartSphere Solutions LLP — Intelligent Locking for Safer Operations.
+            Smartosphere Solutions LLP — Intelligent Locking for Safer Operations.
           </p>
         </div>
       </div>

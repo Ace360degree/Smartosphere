@@ -4,6 +4,7 @@ import {
   Mail, Phone, MapPin, ArrowRight, Send,
   Cpu, Cog, LayoutGrid, ClipboardCheck, Users, MessageSquare
 } from "lucide-react";
+import Swal from 'sweetalert2';
 
 const areasOfInterest = [
   "Tracking & Monitoring",
@@ -55,16 +56,14 @@ const Contact = () => {
     setErrorMessage("");
 
     try {
-      const url = window.location.hostname === "localhost"
-        ? "http://localhost/Smartosphere/admin/contact_submit.php"
-        : "/admin/contact_submit.php";
+      const url = "/api/submit";
 
       const response = await fetch(url, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ enquiryType, ...formData }),
+        body: JSON.stringify({ formSource: 'Contact Form', enquiryType, ...formData }),
       });
 
       const data = await response.json();
@@ -79,14 +78,33 @@ const Contact = () => {
           areaOfInterest: "",
           message: "",
         });
+        
+        Swal.fire({
+          title: 'Success!',
+          text: 'Your enquiry has been successfully submitted. We will get back to you shortly.',
+          icon: 'success',
+          confirmButtonColor: '#EC8209'
+        });
       } else {
         setStatus("error");
         setErrorMessage(data.error || "An error occurred. Please try again.");
+        Swal.fire({
+          title: 'Error',
+          text: data.error || 'An error occurred. Please try again.',
+          icon: 'error',
+          confirmButtonColor: '#EC8209'
+        });
       }
     } catch (err) {
       console.error("Error submitting contact form:", err);
       setStatus("error");
       setErrorMessage("Network error. Please verify your connection.");
+      Swal.fire({
+        title: 'Error',
+        text: 'Network error. Please verify your connection.',
+        icon: 'error',
+        confirmButtonColor: '#EC8209'
+      });
     }
   };
 
@@ -220,7 +238,7 @@ const Contact = () => {
           border-radius: 12px;
           border: 1px solid rgba(255, 255, 255, 0.08);
           background-color: #161920;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           display: flex;
           align-items: flex-start;
           gap: 16px;
@@ -415,7 +433,7 @@ const Contact = () => {
           color: #ffffff;
           font-size: 14px;
           outline: none;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           font-family: inherit;
         }
 
@@ -450,7 +468,7 @@ const Contact = () => {
           border-radius: 8px;
           color: #ffffff;
           background: linear-gradient(135deg, #ff7e05 0%, #eb1c24 100%);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           border: none;
           cursor: pointer;
         }
@@ -540,7 +558,7 @@ const Contact = () => {
           padding: 24px;
           border: 1px solid rgba(255, 255, 255, 0.08);
           text-align: center;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .demo-card:hover {
@@ -588,7 +606,7 @@ const Contact = () => {
           border-radius: 8px;
           color: #ffffff;
           background: linear-gradient(135deg, #EC8209 0%, #eb1c24 100%);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .demo-btn:hover {
@@ -721,7 +739,7 @@ const Contact = () => {
             animate={heroInView ? { opacity: 1, y: 0 } : {}}
             className="contact-desc"
           >
-            At SmartoSphere Solutions LLP, we work closely with organisations to understand operational challenges and design practical, deployable technology solutions.
+            At Smartosphere Solutions LLP, we work closely with organisations to understand operational challenges and design practical, deployable technology solutions.
           </motion.p>
           <motion.p
             {...fadeUp(0.3)}
@@ -762,7 +780,7 @@ const Contact = () => {
                   <div>
                     <h3 className="enquiry-btn-title">Product Enquiry</h3>
                     <p className="enquiry-btn-desc">
-                      For discussions around existing SmartoSphere solutions such as tracking systems, biomedical monitoring, industrial electronics, or infrastructure control.
+                      For discussions around existing Smartosphere solutions such as tracking systems, biomedical monitoring, industrial electronics, or infrastructure control.
                     </p>
                   </div>
                 </button>
@@ -800,8 +818,8 @@ const Contact = () => {
                     <Phone size={18} className="info-card-icon" />
                     <span className="info-card-title">Phone</span>
                   </div>
-                  <a href="tel:+91XXXXXXXXXX" className="info-link">
-                    +91-XXXXXXXXXX
+                  <a href="tel:+919820953762" className="info-link">
+                    +91-9820953762
                   </a>
                 </div>
                 <div className="info-card">
@@ -809,7 +827,7 @@ const Contact = () => {
                     <MapPin size={18} className="info-card-icon" />
                     <span className="info-card-title">Office</span>
                   </div>
-                  <p className="info-text">SmartoSphere Solutions LLP</p>
+                  <p className="info-text">Smartosphere Solutions LLP</p>
                   <p className="info-subtext">India</p>
                 </div>
               </div>
@@ -837,7 +855,7 @@ const Contact = () => {
                     </div>
                     <h4 style={{ fontSize: '20px', fontWeight: '700', color: '#fff', marginBottom: '10px' }}>Inquiry Submitted!</h4>
                     <p style={{ fontSize: '14.5px', color: '#9ca3af', lineHeight: '1.6', margin: '0 0 24px 0' }}>
-                      Thank you for contacting SmartoSphere Solutions. A representative from our team will get in touch with you shortly. An acknowledgment email has been sent to you.
+                      Thank you for contacting Smartosphere Solutions. A representative from our team will get in touch with you shortly. An acknowledgment email has been sent to you.
                     </p>
                     <button type="button" onClick={() => setStatus("idle")} className="submit-btn" style={{ margin: 0 }}>
                       Send Another Enquiry
@@ -1010,7 +1028,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="SmartoSphere Office Location"
+              title="Smartosphere Office Location"
             />
           </div>
         </div>
@@ -1057,7 +1075,7 @@ const Contact = () => {
             animate={processInView ? { opacity: 1, y: 0 } : {}}
             className="process-tagline"
           >
-            SmartoSphere Solutions LLP —{" "}
+            Smartosphere Solutions LLP —{" "}
             <span className="process-tagline-accent">Engineering Conversations That Lead to Practical Solutions.</span>
           </motion.p>
         </div>

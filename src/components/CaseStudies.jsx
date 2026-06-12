@@ -146,7 +146,7 @@ const CaseStudies = () => {
           display: flex;
           align-items: center;
           gap: 8px;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           text-decoration: none;
           white-space: nowrap;
           border-bottom: 1px solid transparent;
@@ -173,7 +173,7 @@ const CaseStudies = () => {
           border-radius: 16px;
           padding: 40px;
           border: 1px solid rgba(255, 255, 255, 0.04);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           overflow: hidden;
         }
 
@@ -185,7 +185,7 @@ const CaseStudies = () => {
           width: 4px;
           height: 100%;
           background: linear-gradient(180deg, #DB2442, #410711);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .case-study-card:hover {
@@ -243,7 +243,7 @@ const CaseStudies = () => {
           backdrop-filter: blur(10px);
           -webkit-backdrop-filter: blur(10px);
           box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1), 0 4px 10px rgba(0, 0, 0, 0.2);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .case-study-card:hover .glass-icon-wrapper {
@@ -259,7 +259,7 @@ const CaseStudies = () => {
           height: 32px;
           object-fit: contain;
           opacity: 0.8;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .case-study-card:hover .glass-icon {

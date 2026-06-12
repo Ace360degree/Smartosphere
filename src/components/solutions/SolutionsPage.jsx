@@ -287,7 +287,7 @@ const SolutionsPage = () => {
           filter: blur(15px);
           pointer-events: none;
           z-index: 1;
-          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
           opacity: 0.8;
         }
 
@@ -305,7 +305,7 @@ const SolutionsPage = () => {
           justify-content: center;
           text-align: center;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
           border: 1px solid rgba(212, 137, 72, 0.05); /* very subtle baseline border */
         }
 
@@ -325,7 +325,7 @@ const SolutionsPage = () => {
           mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
           mask-composite: exclude;
           pointer-events: none;
-          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         /* Hover effects */
@@ -353,7 +353,7 @@ const SolutionsPage = () => {
           font-family: 'Space Grotesk', -apple-system, sans-serif;
           margin-bottom: 20px;
           line-height: 1;
-          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
           text-shadow: 0 0 20px rgba(236, 130, 9, 0.3);
         }
 
@@ -368,7 +368,7 @@ const SolutionsPage = () => {
           line-height: 1.6;
           color: #9ca3af;
           margin: 0;
-          transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.5s cubic-bezier(0.16, 1, 0.3, 1);
           font-weight: 500;
         }
 
@@ -424,7 +424,7 @@ const SolutionsPage = () => {
             <h1 className="sol-hero-title">Solutions</h1>
             <p className="sol-hero-subtitle">Every Problem We Solve Becomes a Product</p>
             <p className="sol-hero-desc">
-              At SmartoSphere Solutions LLP, we design and deliver end-to-end electronic and
+              At Smartosphere Solutions LLP, we design and deliver end-to-end electronic and
               software solutions that address real-world operational challenges across industries.
               Each solution we build is engineered as a standalone, scalable product.
             </p>
@@ -486,19 +486,19 @@ const SolutionsPage = () => {
             transition={{ delay: 0.1 }}
             className="text-body mb-8"
           >
-            From concept → prototype → production → deployment, SmartoSphere acts as your technology partner.
+            From concept → prototype → production → deployment, Smartosphere acts as your technology partner.
           </motion.p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://wa.me/919820953762" target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 text-primary-foreground font-semibold rounded-lg hover:shadow-[0_0_20px_hsl(350_72%_50%/0.4)] transition-all"
+              className="inline-flex items-center justify-center px-6 py-3 text-primary-foreground font-semibold rounded-lg hover:shadow-[0_0_20px_hsl(350_72%_50%/0.4)] transition"
               style={{ background: 'linear-gradient(135deg, hsl(32 93% 48%), hsl(350 72% 50%))' }}
             >
               Talk to Our Engineering Team
             </a>
             <a
               href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition-all"
+              className="inline-flex items-center justify-center px-6 py-3 border border-accent text-accent font-semibold rounded-lg hover:bg-accent/10 transition"
             >
               Get in Touch
             </a>

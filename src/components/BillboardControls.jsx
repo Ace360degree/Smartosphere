@@ -80,7 +80,7 @@ const BillboardControls = () => {
           border: none;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
           box-shadow: 0 4px 16px rgba(236, 130, 9, 0.25);
         }
         .gk-btn-primary:hover {
@@ -100,7 +100,7 @@ const BillboardControls = () => {
           border: 1.5px solid #EC8209;
           cursor: pointer;
           text-decoration: none;
-          transition: all 0.25s ease;
+          transition: transform, opacity, background-color, border-color, color 0.25s ease;
         }
         .gk-btn-secondary:hover {
           background: rgba(236, 130, 9, 0.08);
@@ -258,7 +258,7 @@ const BillboardControls = () => {
           <p className="gk-hero-subtitle">Electronic Control Systems for Billboard Infrastructure</p>
 
           <p className="gk-hero-desc">
-            Billboard Controls is SmartoSphere's on-site electronic control solution designed to manage LED and digital
+            Billboard Controls is Smartosphere's on-site electronic control solution designed to manage LED and digital
             billboard hardware with precision and reliability. The system enables centralised electronic control, power
             monitoring, performance diagnostics, and remote management—ensuring consistent operation of outdoor
             advertising infrastructure in demanding environments.
@@ -379,13 +379,13 @@ const BillboardControls = () => {
         </div>
       </div>
 
-      {/* Why SmartoSphere */}
+      {/* Why Smartosphere */}
       <div className="gk-wrap">
         <div className="gk-section">
-          <h2 className="gk-h2">Why Billboard Controls by SmartoSphere</h2>
+          <h2 className="gk-h2">Why Billboard Controls by Smartosphere</h2>
           <p className="gk-body">
             Billboard Controls is developed with a focus on durability, reliability, and operational efficiency. By
-            engineering both the hardware and firmware in-house, SmartoSphere ensures tight integration and the ability
+            engineering both the hardware and firmware in-house, Smartosphere ensures tight integration and the ability
             to customise the solution to match exact operational requirements. This makes it suitable for both standalone
             installations and large-scale network deployments.
           </p>
@@ -417,7 +417,7 @@ const BillboardControls = () => {
             <a href="/contact" className="gk-btn-secondary">Request a Billboard Controls Demo</a>
           </div>
           <p className="gk-cta-footer">
-            SmartoSphere Solutions LLP — Reliable Electronics for Outdoor Display Infrastructure.
+            Smartosphere Solutions LLP — Reliable Electronics for Outdoor Display Infrastructure.
           </p>
         </div>
       </div>

@@ -137,7 +137,7 @@ const Approach = () => {
           border-radius: 20px;
           overflow: hidden;
           height: 420px;
-          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: transform, opacity, background-color, border-color, color 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           border: 1px solid rgba(255, 255, 255, 0.05);
         }
 

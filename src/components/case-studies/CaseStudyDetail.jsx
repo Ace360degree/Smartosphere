@@ -292,7 +292,7 @@ const CaseStudyDetail = ({ data }) => {
           padding: 12px 24px;
           border-radius: 8px;
           text-decoration: none;
-          transition: all 0.25s;
+          transition: transform, opacity, background-color, border-color, color 0.25s;
           box-shadow: 0 4px 16px rgba(219, 36, 66, 0.35);
         }
         .cs-detail-btn-primary:hover {
@@ -311,7 +311,7 @@ const CaseStudyDetail = ({ data }) => {
           border-radius: 8px;
           border: 1.5px solid #DB2442;
           text-decoration: none;
-          transition: all 0.25s;
+          transition: transform, opacity, background-color, border-color, color 0.25s;
         }
         .cs-detail-btn-secondary:hover {
           background: rgba(219, 36, 66, 0.08);
@@ -456,11 +456,11 @@ const CaseStudyDetail = ({ data }) => {
         </div>
       </section>
 
-      {/* Why SmartoSphere */}
+      {/* Why Smartosphere */}
       <section className="cs-detail-section">
         <div className="cs-detail-wrap">
-          <SectionBlock label="Our Edge" title="Why SmartoSphere">
-            <p className="cs-detail-body">{data.whySmartoSphere}</p>
+          <SectionBlock label="Our Edge" title="Why Smartosphere">
+            <p className="cs-detail-body">{data.whySmartosphere}</p>
           </SectionBlock>
         </div>
       </section>

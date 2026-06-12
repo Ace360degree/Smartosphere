@@ -48,7 +48,7 @@ const Reliability = () => {
           flex-direction: column;
           align-items: center;
           text-align: center;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
@@ -68,7 +68,7 @@ const Reliability = () => {
           align-items: center;
           justify-content: center;
           margin-bottom: 20px;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .reliability-card:hover .reliability-icon-wrapper {

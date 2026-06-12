@@ -247,7 +247,7 @@ const AboutUs = () => {
               Engineering Practical <br></br>Technology for <span className="highlight">Real-World Challenges</span>
             </h1>
             <p className="about-hero-desc">
-              SmartoSphere Solutions LLP is an engineering-driven technology company focused on designing and deploying electronic and software systems that work reliably in real operating environments.
+              Smartosphere Solutions LLP is an engineering-driven technology company focused on designing and deploying electronic and software systems that work reliably in real operating environments.
             </p>
           </div>
         </div>

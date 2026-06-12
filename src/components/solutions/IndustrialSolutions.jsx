@@ -117,7 +117,7 @@ const IndustrialSolutions = () => {
           padding: 40px;
           border: 1px solid rgba(255, 255, 255, 0.06);
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-          transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+          transition: transform, opacity, background-color, border-color, color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
           height: 100%;
           display: flex;
           flex-direction: column;
@@ -147,7 +147,7 @@ const IndustrialSolutions = () => {
           background: rgba(236, 130, 9, 0.1);
           border: 1px solid rgba(236, 130, 9, 0.3);
           color: #EC8209;
-          transition: all 0.4s ease;
+          transition: transform, opacity, background-color, border-color, color 0.4s ease;
         }
 
         .industrial-card:hover .icon-circle {
@@ -222,7 +222,7 @@ const IndustrialSolutions = () => {
           border-radius: 100px;
           background: rgba(236, 130, 9, 0.05);
           border: 1px solid rgba(236, 130, 9, 0.25);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         .industrial-card:hover .tag-chip {

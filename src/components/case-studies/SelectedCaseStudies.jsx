@@ -139,7 +139,7 @@ const SelectedCaseStudies = () => {
           padding: 40px;
           position: relative;
           overflow: hidden;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: transform, opacity, background-color, border-color, color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
           text-align: left;
         }
@@ -155,7 +155,7 @@ const SelectedCaseStudies = () => {
           background: linear-gradient(180deg, #DB2442 10%, #751323 50%);
           border-top-left-radius: 12px;
           border-bottom-left-radius: 12px;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
 
         /* Hover States */
@@ -188,7 +188,7 @@ const SelectedCaseStudies = () => {
           align-items: center;
           justify-content: center;
           color: #DB2442;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           flex-shrink: 0;
         }
 
@@ -285,7 +285,7 @@ const SelectedCaseStudies = () => {
           border: 1px solid rgba(219, 36, 66, 0.2);
           padding: 4px 12px;
           border-radius: 100px;
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
           cursor: pointer;
         }
 

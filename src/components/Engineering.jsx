@@ -17,7 +17,7 @@ const sections = [
     icon: CircuitBoard,
     title: "Hardware Design & Electronics Engineering",
     content:
-      "SmartoSphere designs custom electronic systems tailored to specific use cases and environments. Our hardware engineering capabilities include circuit design, component selection, power optimisation, and ruggedisation for industrial and outdoor deployments. We focus on building electronics that deliver stable performance over long operating cycles. This capability enables us to design purpose-built devices for tracking, control, monitoring, biomedical applications, and safety systems.",
+      "Smartosphere designs custom electronic systems tailored to specific use cases and environments. Our hardware engineering capabilities include circuit design, component selection, power optimisation, and ruggedisation for industrial and outdoor deployments. We focus on building electronics that deliver stable performance over long operating cycles. This capability enables us to design purpose-built devices for tracking, control, monitoring, biomedical applications, and safety systems.",
   },
   {
     icon: Cpu,
@@ -29,7 +29,7 @@ const sections = [
     icon: Cloud,
     title: "Cloud Platforms & Data Engineering",
     content:
-      "SmartoSphere develops cloud-based platforms that transform raw device data into actionable insights. Our cloud engineering includes data ingestion, processing, storage, alerting, and dashboard visualisation. These platforms provide centralised visibility, historical analysis, and operational reporting across deployments of any scale. We design our platforms to be scalable, secure, and adaptable to different operational models.",
+      "Smartosphere develops cloud-based platforms that transform raw device data into actionable insights. Our cloud engineering includes data ingestion, processing, storage, alerting, and dashboard visualisation. These platforms provide centralised visibility, historical analysis, and operational reporting across deployments of any scale. We design our platforms to be scalable, secure, and adaptable to different operational models.",
   },
   {
     icon: Smartphone,
@@ -47,7 +47,7 @@ const sections = [
     icon: Rocket,
     title: "Prototyping to Production",
     content:
-      "SmartoSphere supports the complete lifecycle from concept to deployment. We develop prototypes to validate ideas, refine designs through iterative testing, and prepare systems for production deployment. This ensures that solutions are not only technically sound but also manufacturable, maintainable, and scalable.",
+      "Smartosphere supports the complete lifecycle from concept to deployment. We develop prototypes to validate ideas, refine designs through iterative testing, and prepare systems for production deployment. This ensures that solutions are not only technically sound but also manufacturable, maintainable, and scalable.",
   },
   {
     icon: TestTube2,
@@ -65,7 +65,7 @@ const sections = [
     icon: FlaskConical,
     title: "R&D for Emerging Technologies",
     content:
-      "SmartoSphere invests in research and development across emerging technology areas. We explore applications in edge computing, AI-driven analytics, low-power wireless communication, and advanced sensor technologies. This R&D focus ensures that our engineering capabilities continue to evolve alongside the industries we serve.",
+      "Smartosphere invests in research and development across emerging technology areas. We explore applications in edge computing, AI-driven analytics, low-power wireless communication, and advanced sensor technologies. This R&D focus ensures that our engineering capabilities continue to evolve alongside the industries we serve.",
   },
 ];
 
@@ -180,7 +180,7 @@ const Engineering = () => {
           border-radius: 16px;
           background: #1c1f26;
           border: 1px solid rgba(255, 255, 255, 0.05);
-          transition: all 0.3s ease;
+          transition: transform, opacity, background-color, border-color, color 0.3s ease;
         }
         .capability-card:hover {
           border-color: rgba(236, 130, 9, 0.4);
@@ -234,7 +234,7 @@ const Engineering = () => {
                 From Concept to<br />Deployable Technology
               </h1>
               <p className="hero-desc">
-                At SmartoSphere Solutions LLP, engineering and R&D form the foundation of everything we build. 
+                At Smartosphere Solutions LLP, engineering and R&D form the foundation of everything we build. 
                 Our focus is not limited to product development alone—we specialise in solving complex, 
                 real-world challenges through deep technical engineering across electronics, firmware, and software.
               </p>

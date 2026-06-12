@@ -183,7 +183,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container footer-bottom-content">
           <div className="copyright">
-            <p>© {currentYear} SmartoSphere Solutions LLP. All rights reserved.</p>
+            <p>© {currentYear} Smartosphere Solutions LLP. All rights reserved.</p>
             <p className="legal-note">All solutions are engineered for specific operating environments. Specifications and configurations may vary based on deployment requirements.</p>
           </div>
           <div className="footer-links">

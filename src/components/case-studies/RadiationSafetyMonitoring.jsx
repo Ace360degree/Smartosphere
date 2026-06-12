@@ -22,7 +22,7 @@ const data = {
   },
   solutionArchitecture: {
     description:
-      "SmartoSphere designed a radiation monitoring system using its Radiation Electronics platform.",
+      "Smartosphere designed a radiation monitoring system using its Radiation Electronics platform.",
     points: [
       "Radiation sensors selected based on the operating environment",
       "Custom electronic hardware for stable data acquisition",
@@ -62,11 +62,11 @@ const data = {
     summary:
       "The client gained confidence in both safety monitoring and regulatory readiness.",
   },
-  whySmartoSphere:
-    "The client chose SmartoSphere for its ability to deliver a custom-engineered radiation monitoring solution rather than a generic measurement device. The integrated approach—covering hardware, firmware, and software—ensured reliable performance and adaptability to specific safety requirements. SmartoSphere's emphasis on validation and long-term reliability was critical for deployment in a regulated environment.",
+  whySmartosphere:
+    "The client chose Smartosphere for its ability to deliver a custom-engineered radiation monitoring solution rather than a generic measurement device. The integrated approach—covering hardware, firmware, and software—ensured reliable performance and adaptability to specific safety requirements. Smartosphere's emphasis on validation and long-term reliability was critical for deployment in a regulated environment.",
   relatedSolutions: ["Radiation Electronics"],
   tagline:
-    "SmartoSphere Solutions LLP — Engineering Safety Through Reliable Monitoring.",
+    "Smartosphere Solutions LLP — Engineering Safety Through Reliable Monitoring.",
 };
 
 const RadiationSafetyMonitoring = () => (
