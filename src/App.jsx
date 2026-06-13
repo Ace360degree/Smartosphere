@@ -58,6 +58,7 @@ function App() {
   const [loadingCaseStudy, setLoadingCaseStudy] = useState(false);
   const [dynamicBlog, setDynamicBlog] = useState(null);
   const [loadingBlog, setLoadingBlog] = useState(false);
+  const [blogNotFound, setBlogNotFound] = useState(false);
 
   useEffect(() => {
     const handleLocationChange = () => {
@@ -160,6 +161,7 @@ function App() {
       if (activeBlogSlug.startsWith('wp-')) {
         return;
       }
+      setBlogNotFound(false);
       const fetchBlog = async () => {
         setLoadingBlog(true);
         try {
@@ -169,13 +171,21 @@ function App() {
           const res = await fetch(url);
           if (res.ok) {
             const data = await res.json();
-            setDynamicBlog(data);
+            if (data && !data.error) {
+              setDynamicBlog(data);
+              setBlogNotFound(false);
+            } else {
+              setDynamicBlog(null);
+              setBlogNotFound(true);
+            }
           } else {
             setDynamicBlog(null);
+            setBlogNotFound(true);
           }
         } catch (err) {
           console.error('Error fetching blog post:', err);
           setDynamicBlog(null);
+          setBlogNotFound(true);
         } finally {
           setLoadingBlog(false);
         }
@@ -183,6 +193,7 @@ function App() {
       fetchBlog();
     } else {
       setDynamicBlog(null);
+      setBlogNotFound(false);
     }
   }, [activeBlogSlug]);
 
@@ -288,6 +299,13 @@ function App() {
       ) : loadingBlog ? (
         <div style={{ padding: '120px 0', textAlign: 'center', color: '#fff', fontSize: '18px', fontWeight: 600 }}>
           Loading Blog Post...
+        </div>
+      ) : blogNotFound ? (
+        <div style={{ padding: '140px 0 80px', textAlign: 'center', color: '#fff' }}>
+          <div style={{ fontSize: '64px', marginBottom: '16px' }}>📄</div>
+          <h1 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '16px' }}>Blog Post Not Found</h1>
+          <p style={{ color: 'rgba(255,255,255,0.6)', marginBottom: '32px' }}>The article you're looking for doesn't exist or may have been removed.</p>
+          <a href="/blogs" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px', background: 'linear-gradient(135deg, #EB1C24, #EC8209)', color: '#fff', borderRadius: '8px', fontWeight: 700, textDecoration: 'none' }}>← Back to Blogs</a>
         </div>
       ) : (
         <>
