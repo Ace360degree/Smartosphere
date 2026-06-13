@@ -1,5 +1,16 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/admin/:path*",
+      "destination": "https://admin-staging.smartospheresolutions.com/admin/:path*"
+    },
+    {
+      "source": "/blogs/:path*",
+      "destination": "https://admin-staging.smartospheresolutions.com/blogs/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
