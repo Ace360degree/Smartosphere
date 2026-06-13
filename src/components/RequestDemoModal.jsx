@@ -43,12 +43,6 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
           phone: "",
           website: "",
           requirements: "",
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          website: "",
-          requirements: "",
         });
       } else {
         setStatus("error");
@@ -56,7 +50,6 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
       }
     } catch (err) {
       console.error("Error submitting demo request:", err);
-      setStatus("error");
       setStatus("error");
       setErrorMessage("Network error. Please check your connection and try again.");
     }

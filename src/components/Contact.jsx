@@ -75,13 +75,6 @@ const Contact = () => {
           phone: "",
           areaOfInterest: "",
           message: "",
-        setFormData({
-          fullName: "",
-          organisation: "",
-          email: "",
-          phone: "",
-          areaOfInterest: "",
-          message: "",
         });
       } else {
         setStatus("error");
@@ -89,7 +82,6 @@ const Contact = () => {
       }
     } catch (err) {
       console.error("Error submitting contact form:", err);
-      setStatus("error");
       setStatus("error");
       setErrorMessage("Network error. Please verify your connection.");
     }
