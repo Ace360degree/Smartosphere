@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "/blogs/wp-login.php",
+      "destination": "https://admin-staging.smartospheresolutions.com/blogs/wp-login.php",
+      "permanent": false
+    },
+    {
+      "source": "/blogs/wp-admin",
+      "destination": "https://admin-staging.smartospheresolutions.com/blogs/wp-admin",
+      "permanent": false
+    },
+    {
+      "source": "/blogs/wp-admin/:path*",
+      "destination": "https://admin-staging.smartospheresolutions.com/blogs/wp-admin/:path*",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     {
       "source": "/admin/:path*",
