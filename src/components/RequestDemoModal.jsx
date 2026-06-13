@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { User, Mail, Phone, Globe, FileText, X, Send, CheckCircle2, AlertCircle } from "lucide-react";
-import Swal from 'sweetalert2';
-
 const RequestDemoModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -45,33 +43,22 @@ const RequestDemoModal = ({ isOpen, onClose }) => {
           phone: "",
           website: "",
           requirements: "",
-        });
-        Swal.fire({
-          title: 'Success!',
-          text: 'Your demo request has been successfully submitted.',
-          icon: 'success',
-          confirmButtonColor: '#EC8209'
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          website: "",
+          requirements: "",
         });
       } else {
         setStatus("error");
         setErrorMessage(data.error || "Something went wrong. Please try again.");
-        Swal.fire({
-          title: 'Error',
-          text: data.error || 'Something went wrong. Please try again.',
-          icon: 'error',
-          confirmButtonColor: '#EC8209'
-        });
       }
     } catch (err) {
       console.error("Error submitting demo request:", err);
       setStatus("error");
+      setStatus("error");
       setErrorMessage("Network error. Please check your connection and try again.");
-      Swal.fire({
-        title: 'Error',
-        text: 'Network error. Please check your connection and try again.',
-        icon: 'error',
-        confirmButtonColor: '#EC8209'
-      });
     }
   };
 

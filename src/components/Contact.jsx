@@ -4,8 +4,6 @@ import {
   Mail, Phone, MapPin, ArrowRight, Send,
   Cpu, Cog, LayoutGrid, ClipboardCheck, Users, MessageSquare
 } from "lucide-react";
-import Swal from 'sweetalert2';
-
 const areasOfInterest = [
   "Tracking & Monitoring",
   "Biomedical Systems",
@@ -77,34 +75,23 @@ const Contact = () => {
           phone: "",
           areaOfInterest: "",
           message: "",
-        });
-        
-        Swal.fire({
-          title: 'Success!',
-          text: 'Your enquiry has been successfully submitted. We will get back to you shortly.',
-          icon: 'success',
-          confirmButtonColor: '#EC8209'
+        setFormData({
+          fullName: "",
+          organisation: "",
+          email: "",
+          phone: "",
+          areaOfInterest: "",
+          message: "",
         });
       } else {
         setStatus("error");
         setErrorMessage(data.error || "An error occurred. Please try again.");
-        Swal.fire({
-          title: 'Error',
-          text: data.error || 'An error occurred. Please try again.',
-          icon: 'error',
-          confirmButtonColor: '#EC8209'
-        });
       }
     } catch (err) {
       console.error("Error submitting contact form:", err);
       setStatus("error");
+      setStatus("error");
       setErrorMessage("Network error. Please verify your connection.");
-      Swal.fire({
-        title: 'Error',
-        text: 'Network error. Please verify your connection.',
-        icon: 'error',
-        confirmButtonColor: '#EC8209'
-      });
     }
   };
 
