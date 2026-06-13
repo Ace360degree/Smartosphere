@@ -14,13 +14,24 @@
       "source": "/blogs/wp-admin/:path*",
       "destination": "https://admin-staging.smartospheresolutions.com/blogs/wp-admin/:path*",
       "permanent": false
+    },
+    {
+      "source": "/admin",
+      "destination": "https://admin-staging.smartospheresolutions.com/admin/login.php",
+      "permanent": false
+    },
+    {
+      "source": "/admin/",
+      "destination": "https://admin-staging.smartospheresolutions.com/admin/login.php",
+      "permanent": false
+    },
+    {
+      "source": "/admin/:path*",
+      "destination": "https://admin-staging.smartospheresolutions.com/admin/:path*",
+      "permanent": false
     }
   ],
   "rewrites": [
-    {
-      "source": "/admin/:path*",
-      "destination": "https://admin-staging.smartospheresolutions.com/admin/:path*"
-    },
     {
       "source": "/blogs/:path*",
       "destination": "https://admin-staging.smartospheresolutions.com/blogs/:path*"
