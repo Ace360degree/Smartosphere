@@ -172,9 +172,16 @@ const Footer = () => {
               <a href="mailto:boa@smartospheresolutions.com">boa@smartospheresolutions.com</a>
             </li>
 
-            <li>
-              <MapPin size={18} className="contact-icon" />
-              <span>India</span>
+            <li style={{ alignItems: 'flex-start' }}>
+              <MapPin size={18} className="contact-icon" style={{ marginTop: '2px', flexShrink: 0 }} />
+              <div>
+                Mumbai, India<br />
+                <span style={{ fontSize: '0.85rem', opacity: 0.7, lineHeight: 1.4, display: 'inline-block', marginTop: '4px' }}>
+                  F-36, Marol Nand Dham Indl. Estate,<br />
+                  Marol-Maroshi Road, Andheri (E),<br />
+                  Mumbai - 400059
+                </span>
+              </div>
             </li>
           </ul>
         </div>

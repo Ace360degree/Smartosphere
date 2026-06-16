@@ -806,8 +806,8 @@ const Contact = () => {
                     <MapPin size={18} className="info-card-icon" />
                     <span className="info-card-title">Office</span>
                   </div>
-                  <p className="info-text">Smartosphere Solutions LLP</p>
-                  <p className="info-subtext">India</p>
+                  <p className="info-text">Mumbai, India</p>
+                  <p className="info-subtext">F-36, Marol Nand Dham Indl. Estate,<br />Marol-Maroshi Road, Andheri (E),<br />Mumbai - 400059</p>
                 </div>
               </div>
             </motion.div>
@@ -1000,7 +1000,7 @@ const Contact = () => {
         <div className="container">
           <div className="map-frame-container">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995709657!3d19.08219783958221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1700000000000"
+              src="https://maps.google.com/maps?q=F-36,%20Marol%20Nand%20Dham%20Industrial%20Estate,%20Marol-Maroshi%20Road,%20Andheri%20East,%20Mumbai%20400059&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.8) contrast(1.2)" }}
