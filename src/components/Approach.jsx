@@ -4,29 +4,26 @@ const steps = [
   {
     id: '01',
     title: 'Understanding the Environment',
-    type: 'image',
-    content: '/image.png',
+    description: 'We begin by studying how and where the system will operate—power conditions, connectivity constraints, usage patterns, and operational risks.',
+    bgImage: '/image.png',
   },
   {
     id: '02',
     title: 'Engineering the System',
     description: 'Hardware, firmware, and software are designed together as a single system, ensuring predictable behaviour and long-term stability.',
-    icon: '/icons/1.png',
-    type: 'text',
+    bgImage: '/Engineering the System.png',
   },
   {
     id: '03',
     title: 'Validation in Real Conditions',
     description: 'Systems are tested beyond basic functionality, including endurance, fault scenarios, and edge cases relevant to deployment.',
-    icon: '/icons/2.png',
-    type: 'text',
+    bgImage: '/Validation in Real Conditions.png',
   },
   {
     id: '04',
     title: 'Long-Term Support & Evolution',
     description: 'We design systems to be maintainable and adaptable, supporting updates and refinements as requirements evolve.',
-    icon: '/icons/3.png',
-    type: 'text',
+    bgImage: '/Long-Term Support & Evolution.png',
   },
 ];
 
@@ -137,8 +134,9 @@ const Approach = () => {
           border-radius: 20px;
           overflow: hidden;
           height: 420px;
-          transition: transform, opacity, background-color, border-color, color 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           border: 1px solid rgba(255, 255, 255, 0.05);
+          cursor: pointer;
+          transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease, box-shadow 0.4s ease;
         }
 
         .approach-card:hover {
@@ -155,35 +153,47 @@ const Approach = () => {
           height: 4px;
           background: linear-gradient(90deg, #ff4d4d, transparent);
           opacity: 0.6;
-          z-index: 2;
+          z-index: 3;
         }
 
-        .card-inner {
-          padding: 40px 30px;
+        .step-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
           height: 100%;
+          object-fit: cover;
+          transition: transform 0.6s ease, filter 0.6s ease;
+          z-index: 1;
+        }
+
+        .approach-card:hover .step-image {
+          transform: scale(1.1);
+          filter: brightness(0.3) blur(3px);
+        }
+
+        .card-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          padding: 40px 30px;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+          z-index: 2;
+          transition: background 0.4s ease;
           display: flex;
           flex-direction: column;
-          z-index: 1;
+          justify-content: flex-end;
+          height: 100%;
+        }
+
+        .approach-card:hover .card-overlay {
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0,0,0,0.4) 100%);
+        }
+
+        .card-content-wrapper {
           position: relative;
-        }
-
-        .step-icon-container {
-          width: 48px;
-          height: 48px;
-          background: linear-gradient(180deg, #EC8209, #FF4400);
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 40px;
-          box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3);
-        }
-
-        .step-icon {
-          width: 24px;
-          height: 24px;
-          color: #23272F;
-          object-fit: contain;
+          z-index: 3;
         }
 
         .step-number {
@@ -193,52 +203,42 @@ const Approach = () => {
           letter-spacing: 1px;
           margin-bottom: 12px;
           display: block;
+          transition: transform 0.4s ease;
         }
 
         .card-step-title {
           font-size: 22px;
           font-weight: 700;
-          margin-bottom: 20px;
+          margin-bottom: 0;
           line-height: 1.3;
+          transition: transform 0.4s ease;
         }
 
         .card-step-description {
           font-size: 15px;
-          color: #a0a0a0;
+          color: #e0e0e0;
           line-height: 1.6;
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.4s ease, transform 0.4s ease, max-height 0.4s ease;
+          margin-top: 0;
+          max-height: 0;
+          overflow: hidden;
         }
 
-        /* Image Card Styling (Step 01) */
-        .approach-card.step-01 .card-inner {
-          padding: 0;
+        .approach-card:hover .card-step-title {
+          transform: translateY(-5px);
         }
 
-        .image-card-content {
-          position: relative;
-          height: 100%;
-          width: 100%;
+        .approach-card:hover .step-number {
+          transform: translateY(-5px);
         }
 
-        .step-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          opacity: 0.8;
-          transition: opacity 0.4s ease;
-        }
-
-        .approach-card.step-01:hover .step-image {
+        .approach-card:hover .card-step-description {
           opacity: 1;
-        }
-
-        .image-card-overlay {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          padding: 40px 30px;
-          background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
-          z-index: 2;
+          transform: translateY(0);
+          max-height: 200px;
+          margin-top: 15px;
         }
 
         /* Responsive Design */
@@ -300,25 +300,13 @@ const Approach = () => {
           {steps.map((step) => (
             <div key={step.id} className={`approach-card step-${step.id}`}>
               <div className="card-top-bar"></div>
-              <div className="card-inner">
-                {step.type === 'text' ? (
-                  <>
-                    <div className="step-icon-container">
-                      <img src={step.icon} alt={`Step ${step.id} Icon`} className="step-icon" />
-                    </div>
-                    <span className="step-number">STEP {step.id}</span>
-                    <h3 className="card-step-title">{step.title}</h3>
-                    <p className="card-step-description">{step.description}</p>
-                  </>
-                ) : (
-                  <div className="image-card-content">
-                    <div className="image-card-overlay">
-                      <span className="step-number">STEP {step.id}</span>
-                      <h3 className="card-step-title">{step.title}</h3>
-                    </div>
-                    <img src={step.content} alt={step.title} className="step-image" />
-                  </div>
-                )}
+              <img src={step.bgImage} alt={step.title} className="step-image" />
+              <div className="card-overlay">
+                <div className="card-content-wrapper">
+                  <span className="step-number">STEP {step.id}</span>
+                  <h3 className="card-step-title">{step.title}</h3>
+                  <p className="card-step-description">{step.description}</p>
+                </div>
               </div>
               <div className="card-glow-effect"></div>
             </div>

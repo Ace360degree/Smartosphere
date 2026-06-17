@@ -31,10 +31,10 @@ export default async function handler(req, res) {
     let phpEndpoint;
 
     if (formSource === 'Contact Form') {
-      phpEndpoint = 'https://admin-staging.smartospheresolutions.com/admin/contact_submit.php';
+      phpEndpoint = 'https://admin.smartospheresolutions.com/admin/contact_submit.php';
     } else {
       // Demo Request / Get in Touch / any other form → demo_submit.php
-      phpEndpoint = 'https://admin-staging.smartospheresolutions.com/admin/demo_submit.php';
+      phpEndpoint = 'https://admin.smartospheresolutions.com/admin/demo_submit.php';
     }
 
     // Forward the request to the cPanel PHP handler
